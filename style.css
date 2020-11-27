@@ -153,48 +153,68 @@ header .intro .btn:hover {
   box-shadow: -1px 5px 5px 3px #ececec;
 }
 .step a:hover {
-  background-color: #9356DC;
-  opacity: 0.15;
+  background-color: #e4d5f6;
 }
 .step a i {
   position: relative;
   right: 20px;
   color: grey;
 }
+.step a i:hover {
+  color: #9356DC;
+}
 
-.items {
+section {
   background-color: #f5f5f8;
   width: 100%;
   padding-top: 10px;
   padding-bottom: 20px;
+  margin-top: 30px;
 }
-.items h1 {
+section h1 {
   font-family: Roboto;
   font-size: 25px;
   margin-left: 20px;
 }
-.items img {
-  width: 95%;
+section .vignets {
+  background-color: white;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: -1px 5px 5px 3px #ececec;
+  width: 90%;
+  height: 220px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+section .vignets img {
+  width: 100%;
   height: 150px;
   border-radius: 10px 10px 0px 0px;
 }
-.items a {
+section .vignets em {
+  width: 50%;
+  padding: 0px;
+  margin: 0px;
+  font-style: normal;
+  float: left;
+  padding-left: 10px;
+  padding-top: 15px;
+}
+section .vignets a {
   text-decoration: none;
   color: black;
   font-family: Roboto;
-  background-color: white;
-  margin-left: 10px;
 }
-.items p {
-  width: 95%;
-  background-color: white;
-  border-radius: 0 0 10px 10px;
-  padding-top: 10px;
-  padding-bottom: 15px;
-  padding-left: 10px;
-  margin-left: 10px;
-  margin-top: 0;
-  box-shadow: -1px 5px 5px 3px #ececec;
+section .new {
+  color: #278870;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #99E2D0;
+  width: 18%;
+  padding: 5px 5px 5px 5px;
+  position: relative;
+  left: 70%;
+  top: 60px;
 }
 
 /*# sourceMappingURL=style.css.map */
