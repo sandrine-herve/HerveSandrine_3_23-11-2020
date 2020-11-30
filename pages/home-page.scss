@@ -1,0 +1,174 @@
+form{
+width: 100%;
+height:50px;
+background-color:#e9eaec;
+text-align:center;
+box-shadow: inset 5px 15px 5px -12px #cdcdcf;
+
+    & input{
+	border:none;
+	background-color:#e9eaec;
+	height:30px;
+	position:relative;
+	top:10px;
+	left:20px;
+	padding-left:10px;
+	font-weight:bold;
+	font-size:16px;
+	font-family:Roboto;
+	}
+
+	& i{
+	position:relative;
+	top:8px;
+	left:20px;
+	}
+}
+
+.intro {
+width:100%;
+font-family:Roboto;
+text-align:center;
+background-color:$back-clr;
+padding-top:15px;
+padding-bottom:40px;
+
+	& h1{
+	font-size:25px;
+	margin:20px 20px 20px 20px;
+	}
+
+	& p{
+	margin:10px 10px 10px 10px;
+	}
+}
+
+
+.funct{
+        
+    & h1{
+    font-family: Roboto;
+    font-size: 25px;
+    margin-left:20px;
+    margin-top:40px;
+    }
+}
+
+.step{
+width: 100%;
+display:flex;
+flex-direction: row;
+
+	& .number{
+	background-color: $color-prim;
+	width:6%;
+	height:9%;
+	border-radius: 40px 40px 40px 40px;
+	padding-left:6px;
+	padding-top:2px;
+	position:relative;
+	top:22px;
+	left:10px;
+	font-family:Roboto;
+	color:white;
+	font-size:15px;
+	}
+}
+
+.link{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    & :hover{
+    background-color:lighten($color-prim,30%);
+    & i:hover{
+    color:$color-prim;
+    }
+    }
+
+	& a{
+	width:90%;
+	text-decoration:none;
+	color:black;
+	font-family:Roboto;
+	font-weight:bold;
+	background-color:$back-clr;
+    margin-bottom:20px; 
+    padding-top:25px;
+    padding-bottom:25px;
+    padding-left:50px;
+    border-radius:20px 20px 20px 20px;
+    box-shadow:$shadow;
+    }
+    & i{
+    position:relative;
+    right:20px;
+    color:grey;
+    }
+}
+
+
+section{
+background-color:$back-clr;
+width:100%;
+padding-top:0px;
+padding-bottom:20px;
+margin-top:0px;
+
+    & h1{
+	font-family: Roboto;
+    font-size: 25px;
+    margin-left:20px;
+    padding-top:20px;
+	}
+
+	& .vignets{
+    background-color:white;
+    border-radius:10px 10px 10px 10px;
+    box-shadow:$shadow;
+    width:90%;
+    height:220px;
+    margin-bottom:20px;
+    margin-left:20px;
+   
+        & img{
+        width:100%;
+        height:150px;
+        border-radius:10px 10px 0px 0px;
+        }
+
+        & em{
+        width:50%;
+        padding:0px;
+        margin:0px;
+        font-style:normal;
+        float:left;
+        padding-left:10px;
+        padding-top:15px;
+        }
+
+        & a{
+        text-decoration:none;
+        color:black;
+        font-family:Roboto;
+        }
+    }
+
+    & .new{
+    color:darken($color-thd,40%);
+    font-family:Roboto;
+    font-size:15px;
+    font-weight:bold;
+    background-color:$color-thd;
+    width:18%;
+    padding:5px 15px 5px 5px;
+    margin-left:200px;
+    position:relative;
+    bottom:150px;
+    }
+}
+
+
+
+
+	
