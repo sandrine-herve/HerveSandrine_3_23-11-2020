@@ -1,0 +1,18 @@
+.btn{
+	font-size:15px;
+	padding:15px;
+	margin:20px;
+	border-radius: 25px 25px 25px 25px;
+	background-image: linear-gradient(-80deg, $color-scd, $color-prim);
+	background-image:-o-linear-gradient(-80deg, $color-scd, $color-prim);
+	background-image:-webkit-linear-gradient(-80deg, $color-scd, $color-prim);
+	background-image:-moz-linear-gradient(-80deg, $color-scd, $color-prim);
+    border:none;
+	color:white;
+	box-shadow: $shadow;
+	transition:transform 400ms;
+	transform: scale(1);
+	&:hover{
+	transform: scale(1.15);
+	}
+	}
