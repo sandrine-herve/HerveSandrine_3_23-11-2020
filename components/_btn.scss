@@ -12,7 +12,9 @@
 	box-shadow: $shadow;
 	transition:transform 400ms;
 	transform: scale(1);
+	opacity:1;
 	&:hover{
 	transform: scale(1.15);
+    opacity:0.7;
 	}
 	}
