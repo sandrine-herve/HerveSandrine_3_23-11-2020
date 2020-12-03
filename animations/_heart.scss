@@ -1,0 +1,25 @@
+section{
+
+i{
+    font-size:22px;
+    border: none;
+    background:white;
+}
+
+.fa-heart {
+    color: #FFF;
+    background-color: white;
+    color: grey;
+}
+.fa-heart::before {
+    content: "\f004";
+    font-weight: normal;
+    transition: color 1s ease-out;
+}
+.fa-heart:hover::before{
+    font-weight:bold;
+    color:$color-scd;
+    cursor:pointer;
+}
+
+}
