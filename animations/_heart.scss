@@ -1,14 +1,9 @@
 section{
 
 i{
-    height:22px;
-    position:relative;
-    left:250px;
-    bottom:50px;
     font-size:22px;
     border: none;
     background:white;
-
 }
 
 .fa-heart {
@@ -23,7 +18,7 @@ i{
 }
 .fa-heart:hover::before{
     font-weight:bold;
-    color: $color-prim;
+    color:$color-scd;
     cursor:pointer;
 }
 
