@@ -1,9 +1,30 @@
-
-
 section{
-	width:100%;
-
-	& img{
-	width:100%;
-	}
+   &.fa-arrow-left{
+   position: relative;
+   bottom:40px;
+   font-size:18px;
+   padding-left:20px;
+   }
+   & img{
+   width:100%;
+   }
+   
+   & div{
+    & h1{
+    background-color:$back-clr;
+    font-family: Shrikhand;
+    padding-left:10px;
+    padding-top:40px;
+    margin-top:0px;
+    }
+    & i{
+    float:right;
+    padding-right:20px;
+    padding-top:40px;
+    }
+   }
 }
+.menu{
+background-color:$back-clr;
+}
+
