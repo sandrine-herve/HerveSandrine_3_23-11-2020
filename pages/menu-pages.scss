@@ -1,15 +1,10 @@
 section{
-   &.fa-arrow-left{
-   position: relative;
-   bottom:40px;
-   font-size:18px;
-   padding-left:20px;
-   }
-   & img{
+   
+  & img{
    width:100%;
    }
    
-   & div{
+  & div{
     & h1{
     background-color:$back-clr;
     font-family: Shrikhand;
@@ -22,9 +17,40 @@ section{
     padding-right:20px;
     padding-top:40px;
     }
-   }
+    & .fa-heart {
+    background-color: $back-clr;
+    border-radius: 0 20px 0 0;
+    }
+  }
 }
+
+.fa-arrow-left{
+   position: relative;
+   bottom:40px;
+   font-size:18px;
+   padding-left:20px;
+   }
+
 .menu{
+display:flex;
+flex-direction:column;
+justify-content:space-between;
 background-color:$back-clr;
+font-family:Roboto;
+
+   & .ape{
+   width:90%;
+   height:50px;
+   background-color:white;
+   margin-bottom:10px;
+   border-radius:15px;
+   box-shadow:$shadow;
+   margin-left:15px;
+   & .price{
+   font-size:15px;
+   float:right;
+   margin-right:10px;
+   }
+   }
 }
 
