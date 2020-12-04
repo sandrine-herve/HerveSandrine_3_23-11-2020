@@ -8,7 +8,6 @@ i{
 
 .fa-heart {
     color: #FFF;
-    background-color: white;
     color: grey;
 }
 .fa-heart::before {
@@ -18,7 +17,10 @@ i{
 }
 .fa-heart:hover::before{
     font-weight:bold;
-    color:$color-scd;
+    background: linear-gradient(to top, $color-scd, $color-prim);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
     cursor:pointer;
 }
 
