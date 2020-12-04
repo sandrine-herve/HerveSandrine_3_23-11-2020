@@ -1,4 +1,53 @@
 @charset "UTF-8";
+section img {
+  width: 100%;
+}
+section div h1 {
+  background-color: #f5f5f8;
+  font-family: Shrikhand;
+  padding-left: 10px;
+  padding-top: 40px;
+  margin-top: 0px;
+}
+section div i {
+  float: right;
+  padding-right: 20px;
+  padding-top: 40px;
+}
+section div .fa-heart {
+  background-color: #f5f5f8;
+  border-radius: 0 20px 0 0;
+}
+
+.fa-arrow-left {
+  position: relative;
+  bottom: 40px;
+  font-size: 18px;
+  padding-left: 20px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f5f5f8;
+  font-family: Roboto;
+}
+.menu .ape {
+  width: 90%;
+  height: 50px;
+  background-color: white;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  box-shadow: -1px 5px 5px 3px #ececec;
+  margin-left: 15px;
+}
+.menu .ape .price {
+  font-size: 15px;
+  float: right;
+  margin-right: 10px;
+}
+
 footer {
   background-color: #3d3e41;
   width: 100%;
@@ -57,7 +106,6 @@ section i {
 }
 section .fa-heart {
   color: #FFF;
-  background-color: white;
   color: grey;
 }
 section .fa-heart::before {
@@ -67,10 +115,76 @@ section .fa-heart::before {
 }
 section .fa-heart:hover::before {
   font-weight: bold;
-  color: #FF79DA;
+  background: linear-gradient(to top, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   cursor: pointer;
 }
 
+.loader {
+  width: 95%;
+  height: 100%;
+  position: absolute;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.custom-loader {
+  cursor: progress;
+  position: absolute;
+  background: radial-gradient(closest-side, #99E2D0, #9356DC, #fff);
+}
+
+.custom-loader {
+  border: 10px solid #9356DC;
+  border-top: 10px solid #FF79DA;
+  border-image: linear-gradient(#9356DC, #FF79DA) 30;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  opacity: 1;
+  animation-name: custom-loader1;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes custom-loader1 {
+  0% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  10% {
+    transform: rotate(15deg) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(-180deg) scale(1.4);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(-360deg) scale(1);
+  }
+}
+body {
+  opacity: 0;
+  animation-name: body;
+  animation-duration: 5s;
+  animation-delay: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes body {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .btn {
   font-size: 15px;
   padding: 15px;
@@ -90,32 +204,6 @@ section .fa-heart:hover::before {
 .btn:hover {
   transform: scale(1.15);
   opacity: 0.7;
-}
-
-section .fa-arrow-left {
-  position: relative;
-  bottom: 40px;
-  font-size: 18px;
-  padding-left: 20px;
-}
-section img {
-  width: 100%;
-}
-section div h1 {
-  background-color: #f5f5f8;
-  font-family: Shrikhand;
-  padding-left: 10px;
-  padding-top: 40px;
-  margin-top: 0px;
-}
-section div i {
-  float: right;
-  padding-right: 20px;
-  padding-top: 40px;
-}
-
-.menu {
-  background-color: #f5f5f8;
 }
 
 /*# sourceMappingURL=style-menu.css.map */
