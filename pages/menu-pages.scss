@@ -1,28 +1,53 @@
-section{
-   
-  & img{
-   width:100%;
-   }
-   
-  & div{
-    & h1{
-    background-color:$back-clr;
-    font-family: Shrikhand;
-    padding-left:10px;
-    padding-top:40px;
-    margin-top:0px;
-    }
-    & i{
-    float:right;
-    padding-right:20px;
-    padding-top:40px;
-    }
-    & .fa-heart {
-    background-color: $back-clr;
-    border-radius: 0 20px 0 0;
-    }
+body{
+  margin:0px;
+
+  & a{
+  color:black;
+  
+  & :hover{
+  color:$color-scd;
+  }
   }
 }
+
+section{
+display:flex;
+
+  & img{
+  position:absolute;
+   width:100%;
+   height:230px;
+   margin:0;
+   object-fit:cover;
+   z-index:-10;
+   }
+
+
+  & h1{
+  width:100%;
+  background-color:$back-clr;
+  font-family: Shrikhand;
+  margin-top:200px;
+  margin-bottom:0px;
+  padding-left:15px;
+  padding-top:30px;
+  padding-bottom:20px;
+  font-size:27px;
+  border-radius:35px 35px 0px 0px;
+  z-index:1;
+    
+      & i{
+      font-size:27px;
+      float:right;
+      padding-right:20px;
+      }
+
+      & .fa-heart {
+      background-color: $back-clr;
+      }
+    }
+  }
+
 
 .fa-arrow-left{
    position: relative;
@@ -38,19 +63,53 @@ justify-content:space-between;
 background-color:$back-clr;
 font-family:Roboto;
 
+  & h2{
+  position:relative;
+  left:20px;
+  width:15%;
+  font-weight:normal;
+  font-size:18px;
+  border-bottom: 3px solid $color-thd;
+  padding-top:10px;
+  padding-bottom:5px;
+  }
+
    & .ape{
    width:90%;
-   height:50px;
+   height:55px;
    background-color:white;
-   margin-bottom:10px;
+   margin-bottom:15px;
+   padding-top:10px;
+   padding-left:10px;
    border-radius:15px;
    box-shadow:$shadow;
-   margin-left:15px;
+   margin-left:10px;
+  
+   & strong{
+   font-size:18px;
+   }
+
+   & span{
+   font-size:14px;
+   }
+   
    & .price{
-   font-size:15px;
+   font-weight:bold;
+   font-size:14px;
    float:right;
    margin-right:10px;
    }
    }
+}
+
+.commander{
+  text-align:center;
+  background-color:$back-clr;
+  padding-top:20px;
+  padding-bottom:60px;
+
+  & .btn{
+  width:50%;
+  }
 }
 
