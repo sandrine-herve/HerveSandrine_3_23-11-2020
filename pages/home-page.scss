@@ -1,3 +1,4 @@
+
 form{
 width: 100%;
 height:50px;
@@ -32,6 +33,7 @@ text-align:center;
 background-color:$back-clr;
 padding-top:15px;
 padding-bottom:40px;
+margin-bottom:40px;
 
 	& h1{
 	font-size:25px;
@@ -45,17 +47,17 @@ padding-bottom:40px;
 
 
 .funct{
+padding-bottom:40px;
         
     & h1{
+    padding-left:20px;
     font-family: Roboto;
     font-size: 25px;
-    margin-left:20px;
-    margin-top:40px;
     }
 }
 
 .step{
-width: 100%;
+width: 95%;
 display:flex;
 flex-direction: row;
 
@@ -94,32 +96,37 @@ flex-direction: row;
 	font-family:Roboto;
 	font-weight:bold;
 	background-color:$back-clr;
-    margin-bottom:20px; 
+    margin-bottom:20px;
+    padding-left:30px; 
     padding-top:25px;
     padding-bottom:25px;
-    padding-left:50px;
     border-radius:20px 20px 20px 20px;
     box-shadow:$shadow;
+
     }
     & i{
-    position:relative;
-    right:20px;
     color:grey;
+    padding-right:15px;
     }
 }
 
 section{
+display:flex;
+flex-direction:column;
 background-color:$back-clr;
 width:100%;
 padding-top:0px;
-padding-bottom:20px;
+padding-bottom:10px;
 margin-top:0px;
 
     & h1{
 	font-family: Roboto;
     font-size: 25px;
     margin-left:20px;
+    margin:0;
     padding-top:20px;
+    padding-bottom:20px;
+    padding-left:20px;
 	}
 
 	& .vignets{
@@ -128,7 +135,7 @@ margin-top:0px;
     box-shadow:$shadow;
     width:90%;
     height:220px;
-    margin-left:20px;
+    margin-left:15px;
    
         & img{
         width:100%;
@@ -147,44 +154,39 @@ margin-top:0px;
         padding-top:15px;
         }
 
-        & p{ 
-        position:relative;
-        bottom:30px;
-        padding-left:10px;
-        }
-
-        & a{
+        & .rest{
         text-decoration:none;
         color:black;
         font-family:Roboto;
         }
 
+}
 
-
-    & .new{
-    color:darken($color-thd,40%);
-    font-family:Roboto;
-    font-size:15px;
-    font-weight:bold;
-    background-color:$color-thd;
-    width:18%;
-    padding:5px 15px 5px 5px;
-    margin-left:200px;
-    position:relative;
-    bottom:150px;
-    }
+& .new{
+color:darken($color-thd,40%);
+font-family:Roboto;
+font-size:15px;
+font-weight:bold;
+background-color:$color-thd;
+width:18%;
+padding:5px 15px 5px 5px;
+position:relative;
+left:210px;
+top:40px;
 }
 
 
+
 i{
-height:22px;
 position:relative;
 left:250px;
 bottom:50px;
 }
 
 .fa-heart {
-    background-color: white;
+font-size:27px;
+width:15%;
+background-color: transparent;
 }
 
 
