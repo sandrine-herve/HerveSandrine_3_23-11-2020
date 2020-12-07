@@ -1,27 +1,36 @@
 .loader{
-	width:95%;
-	height:100%;
-	position:absolute;
-	padding-top:200px;
-	padding-bottom:200px;
-	}
-
-.custom-loader{ 
-    cursor:progress;
     position:absolute;
-    background: radial-gradient(closest-side, #99E2D0, #9356DC, #fff);
+    margin:0;
+	width:97%;
+    height:100%;
+    background-color:white;
+    z-index:10;
+    opacity:1;
+    animation-name:loader2;
+    animation-duration: 10s;
+    animation-fill-mode:forwards;
+    }
+
+@keyframes loader2{
+    0%{opacity:1;}
+    10%{opacity:1;}
+    50%{opacity:1;}
+    80%{opacity:0.8;}
+    90%{opacity:0.4;}
+    100%{opacity:0;}
 }
 
-
 .custom-loader{
+    position:absolute;
+    left:25%;
+    top:50%;
+    cursor:progress;
+    background: radial-gradient(closest-side, #99E2D0, #9356DC, #fff);
     border: 10px solid #9356DC;
     border-top:10px solid #FF79DA;
     border-image:linear-gradient(#9356DC,#FF79DA)30;
-    width:50px;
-    height:50px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
+    width:150px;
+    height:150px;
     opacity: 1;
     animation-name: custom-loader1;
     animation-duration: 10s;
@@ -33,6 +42,7 @@
     0% {
     transform: rotate( 0deg ) scale( 1 );
     opacity: 1;
+    background-color:white;
     }
 
     10% {
@@ -50,18 +60,6 @@
     transform: rotate( -360deg ) scale( 1 );
     }
   }
-body{
-	opacity: 0;
-	animation-name:body;
-	animation-duration: 5s;
-    animation-delay: 1s;
-    animation-fill-mode:forwards;
-	}
-@keyframes body {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-  }
-
 
 
 
