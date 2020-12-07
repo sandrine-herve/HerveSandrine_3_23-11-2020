@@ -31,6 +31,7 @@ form i {
   background-color: #f5f5f8;
   padding-top: 15px;
   padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 .intro h1 {
   font-size: 25px;
@@ -40,15 +41,17 @@ form i {
   margin: 10px 10px 10px 10px;
 }
 
+.funct {
+  padding-bottom: 40px;
+}
 .funct h1 {
+  padding-left: 20px;
   font-family: Roboto;
   font-size: 25px;
-  margin-left: 20px;
-  margin-top: 40px;
 }
 
 .step {
-  width: 100%;
+  width: 95%;
   display: flex;
   flex-direction: row;
 }
@@ -86,38 +89,42 @@ form i {
   font-weight: bold;
   background-color: #f5f5f8;
   margin-bottom: 20px;
+  padding-left: 30px;
   padding-top: 25px;
   padding-bottom: 25px;
-  padding-left: 50px;
   border-radius: 20px 20px 20px 20px;
-  box-shadow: -1px 5px 5px 3px #ececec;
+  box-shadow: -1px 5px 5px 3px #e8e8e8;
 }
 .link i {
-  position: relative;
-  right: 20px;
   color: grey;
+  padding-right: 15px;
 }
 
 section {
+  display: flex;
+  flex-direction: column;
   background-color: #f5f5f8;
   width: 100%;
   padding-top: 0px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   margin-top: 0px;
 }
 section h1 {
   font-family: Roboto;
   font-size: 25px;
   margin-left: 20px;
+  margin: 0;
   padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
 }
 section .vignets {
   background-color: white;
   border-radius: 10px 10px 10px 10px;
-  box-shadow: -1px 5px 5px 3px #ececec;
+  box-shadow: -1px 5px 5px 3px #e8e8e8;
   width: 90%;
   height: 220px;
-  margin-left: 20px;
+  margin-left: 15px;
 }
 section .vignets img {
   width: 100%;
@@ -134,17 +141,12 @@ section .vignets em {
   padding-left: 10px;
   padding-top: 15px;
 }
-section .vignets p {
-  position: relative;
-  bottom: 30px;
-  padding-left: 10px;
-}
-section .vignets a {
+section .vignets .rest {
   text-decoration: none;
   color: black;
   font-family: Roboto;
 }
-section .vignets .new {
+section .new {
   color: #278870;
   font-family: Roboto;
   font-size: 15px;
@@ -152,18 +154,19 @@ section .vignets .new {
   background-color: #99E2D0;
   width: 18%;
   padding: 5px 15px 5px 5px;
-  margin-left: 200px;
   position: relative;
-  bottom: 150px;
+  left: 210px;
+  top: 40px;
 }
 section i {
-  height: 22px;
   position: relative;
   left: 250px;
   bottom: 50px;
 }
 section .fa-heart {
-  background-color: white;
+  font-size: 27px;
+  width: 15%;
+  background-color: transparent;
 }
 
 footer {
@@ -241,28 +244,49 @@ section .fa-heart:hover::before {
 }
 
 .loader {
-  width: 95%;
+  position: absolute;
+  margin: 0;
+  width: 97%;
   height: 100%;
-  position: absolute;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  background-color: white;
+  z-index: 10;
+  opacity: 1;
+  animation-name: loader2;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
 }
 
+@keyframes loader2 {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .custom-loader {
+  position: absolute;
+  left: 25%;
+  top: 50%;
   cursor: progress;
-  position: absolute;
   background: radial-gradient(closest-side, #99E2D0, #9356DC, #fff);
-}
-
-.custom-loader {
   border: 10px solid #9356DC;
   border-top: 10px solid #FF79DA;
   border-image: linear-gradient(#9356DC, #FF79DA) 30;
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
+  width: 150px;
+  height: 150px;
   opacity: 1;
   animation-name: custom-loader1;
   animation-duration: 10s;
@@ -273,6 +297,7 @@ section .fa-heart:hover::before {
   0% {
     transform: rotate(0deg) scale(1);
     opacity: 1;
+    background-color: white;
   }
   10% {
     transform: rotate(15deg) scale(1);
@@ -287,22 +312,6 @@ section .fa-heart:hover::before {
     transform: rotate(-360deg) scale(1);
   }
 }
-body {
-  opacity: 0;
-  animation-name: body;
-  animation-duration: 5s;
-  animation-delay: 1s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes body {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .btn {
   font-size: 15px;
   padding: 15px;
@@ -314,14 +323,15 @@ body {
   background-image: -moz-linear-gradient(-80deg, #FF79DA, #9356DC);
   border: none;
   color: white;
-  box-shadow: -1px 5px 5px 3px #ececec;
+  box-shadow: -1px 5px 5px 3px #e8e8e8;
   transition: transform 400ms;
   transform: scale(1);
   opacity: 1;
 }
 .btn:hover {
   transform: scale(1.15);
-  opacity: 0.7;
+  opacity: 0.8;
+  box-shadow: -1px 5px 5px 3px #c2c2c2;
 }
 
 /*# sourceMappingURL=style.css.map */
