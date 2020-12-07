@@ -13,8 +13,11 @@
 	transition:transform 400ms;
 	transform: scale(1);
 	opacity:1;
+	
 	&:hover{
 	transform: scale(1.15);
-    opacity:0.7;
+    opacity:0.8;
+    box-shadow: -1px 5px 5px 3px #c2c2c2;
 	}
 	}
+	

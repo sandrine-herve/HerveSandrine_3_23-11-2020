@@ -1,4 +1,174 @@
 @charset "UTF-8";
+form {
+  width: 100%;
+  height: 50px;
+  background-color: #e9eaec;
+  text-align: center;
+  box-shadow: inset 5px 15px 5px -12px #cdcdcf;
+}
+form input {
+  border: none;
+  background-color: #e9eaec;
+  height: 30px;
+  position: relative;
+  top: 10px;
+  left: 20px;
+  padding-left: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: Roboto;
+}
+form i {
+  position: relative;
+  top: 8px;
+  left: 20px;
+}
+
+.intro {
+  width: 100%;
+  font-family: Roboto;
+  text-align: center;
+  background-color: #f5f5f8;
+  padding-top: 15px;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+.intro h1 {
+  font-size: 25px;
+  margin: 20px 20px 20px 20px;
+}
+.intro p {
+  margin: 10px 10px 10px 10px;
+}
+
+.funct {
+  padding-bottom: 40px;
+}
+.funct h1 {
+  padding-left: 20px;
+  font-family: Roboto;
+  font-size: 25px;
+}
+
+.step {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+}
+.step .number {
+  background-color: #9356DC;
+  width: 6%;
+  height: 9%;
+  border-radius: 40px 40px 40px 40px;
+  padding-left: 6px;
+  padding-top: 2px;
+  position: relative;
+  top: 22px;
+  left: 10px;
+  font-family: Roboto;
+  color: white;
+  font-size: 15px;
+}
+
+.link {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.link :hover {
+  background-color: #e4d5f6;
+}
+.link :hover i {
+  color: #9356DC;
+}
+.link a {
+  width: 90%;
+  text-decoration: none;
+  color: black;
+  font-family: Roboto;
+  font-weight: bold;
+  background-color: #f5f5f8;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: -1px 5px 5px 3px #e8e8e8;
+}
+.link i {
+  color: grey;
+  padding-right: 15px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f8;
+  width: 100%;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  margin-top: 0px;
+}
+section h1 {
+  font-family: Roboto;
+  font-size: 25px;
+  margin-left: 20px;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+section .vignets {
+  background-color: white;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: -1px 5px 5px 3px #e8e8e8;
+  width: 90%;
+  height: 220px;
+  margin-left: 15px;
+}
+section .vignets img {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px 10px 0px 0px;
+  object-fit: cover;
+}
+section .vignets em {
+  width: 70%;
+  padding: 0px;
+  margin: 0px;
+  font-style: normal;
+  float: left;
+  padding-left: 10px;
+  padding-top: 15px;
+}
+section .vignets .rest {
+  text-decoration: none;
+  color: black;
+  font-family: Roboto;
+}
+section .new {
+  color: #278870;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #99E2D0;
+  width: 18%;
+  padding: 5px 15px 5px 5px;
+  position: relative;
+  left: 210px;
+  top: 40px;
+}
+section i {
+  position: relative;
+  left: 250px;
+  bottom: 50px;
+}
+section .fa-heart {
+  font-size: 27px;
+  width: 15%;
+  background-color: transparent;
+}
+
 footer {
   background-color: #3d3e41;
   width: 100%;
@@ -50,170 +220,6 @@ header img {
   font-weight: normal;
   font-style: normal;
 }
-form {
-  width: 100%;
-  height: 50px;
-  background-color: #e9eaec;
-  text-align: center;
-  box-shadow: inset 5px 15px 5px -12px #cdcdcf;
-}
-form input {
-  border: none;
-  background-color: #e9eaec;
-  height: 30px;
-  position: relative;
-  top: 10px;
-  left: 20px;
-  padding-left: 10px;
-  font-weight: bold;
-  font-size: 16px;
-  font-family: Roboto;
-}
-form i {
-  position: relative;
-  top: 8px;
-  left: 20px;
-}
-
-.intro {
-  width: 100%;
-  font-family: Roboto;
-  text-align: center;
-  background-color: #f5f5f8;
-  padding-top: 15px;
-  padding-bottom: 40px;
-}
-.intro h1 {
-  font-size: 25px;
-  margin: 20px 20px 20px 20px;
-}
-.intro p {
-  margin: 10px 10px 10px 10px;
-}
-
-.funct h1 {
-  font-family: Roboto;
-  font-size: 25px;
-  margin-left: 20px;
-  margin-top: 40px;
-}
-
-.step {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-}
-.step .number {
-  background-color: #9356DC;
-  width: 6%;
-  height: 9%;
-  border-radius: 40px 40px 40px 40px;
-  padding-left: 6px;
-  padding-top: 2px;
-  position: relative;
-  top: 22px;
-  left: 10px;
-  font-family: Roboto;
-  color: white;
-  font-size: 15px;
-}
-
-.link {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-}
-.link :hover {
-  background-color: #e4d5f6;
-}
-.link :hover i {
-  color: #9356DC;
-}
-.link a {
-  width: 90%;
-  text-decoration: none;
-  color: black;
-  font-family: Roboto;
-  font-weight: bold;
-  background-color: #f5f5f8;
-  margin-bottom: 20px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 50px;
-  border-radius: 20px 20px 20px 20px;
-  box-shadow: -1px 5px 5px 3px #ececec;
-}
-.link i {
-  position: relative;
-  right: 20px;
-  color: grey;
-}
-
-section {
-  background-color: #f5f5f8;
-  width: 100%;
-  padding-top: 0px;
-  padding-bottom: 20px;
-  margin-top: 0px;
-}
-section h1 {
-  font-family: Roboto;
-  font-size: 25px;
-  margin-left: 20px;
-  padding-top: 20px;
-}
-section .vignets {
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  box-shadow: -1px 5px 5px 3px #ececec;
-  width: 90%;
-  height: 220px;
-  margin-left: 20px;
-}
-section .vignets img {
-  width: 100%;
-  height: 150px;
-  border-radius: 10px 10px 0px 0px;
-  object-fit: cover;
-}
-section .vignets em {
-  width: 70%;
-  padding: 0px;
-  margin: 0px;
-  font-style: normal;
-  float: left;
-  padding-left: 10px;
-  padding-top: 15px;
-}
-section .vignets p {
-  position: relative;
-  bottom: 30px;
-  padding-left: 10px;
-}
-section .vignets a {
-  text-decoration: none;
-  color: black;
-  font-family: Roboto;
-}
-section .vignets .new {
-  color: #278870;
-  font-family: Roboto;
-  font-size: 15px;
-  font-weight: bold;
-  background-color: #99E2D0;
-  width: 18%;
-  padding: 5px 15px 5px 5px;
-  margin-left: 200px;
-  position: relative;
-  bottom: 150px;
-}
-section i {
-  height: 22px;
-  position: relative;
-  left: 250px;
-  bottom: 50px;
-}
-
 section i {
   font-size: 22px;
   border: none;
@@ -221,7 +227,6 @@ section i {
 }
 section .fa-heart {
   color: #FFF;
-  background-color: white;
   color: grey;
 }
 section .fa-heart::before {
@@ -231,10 +236,82 @@ section .fa-heart::before {
 }
 section .fa-heart:hover::before {
   font-weight: bold;
-  color: #FF79DA;
+  background: linear-gradient(to top, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   cursor: pointer;
 }
 
+.loader {
+  position: absolute;
+  margin: 0;
+  width: 97%;
+  height: 100%;
+  background-color: white;
+  z-index: 10;
+  opacity: 1;
+  animation-name: loader2;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes loader2 {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.custom-loader {
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  cursor: progress;
+  background: radial-gradient(closest-side, #99E2D0, #9356DC, #fff);
+  border: 10px solid #9356DC;
+  border-top: 10px solid #FF79DA;
+  border-image: linear-gradient(#9356DC, #FF79DA) 30;
+  width: 150px;
+  height: 150px;
+  opacity: 1;
+  animation-name: custom-loader1;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes custom-loader1 {
+  0% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+    background-color: white;
+  }
+  10% {
+    transform: rotate(15deg) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(-180deg) scale(1.4);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(-360deg) scale(1);
+  }
+}
 .btn {
   font-size: 15px;
   padding: 15px;
@@ -246,14 +323,15 @@ section .fa-heart:hover::before {
   background-image: -moz-linear-gradient(-80deg, #FF79DA, #9356DC);
   border: none;
   color: white;
-  box-shadow: -1px 5px 5px 3px #ececec;
+  box-shadow: -1px 5px 5px 3px #e8e8e8;
   transition: transform 400ms;
   transform: scale(1);
   opacity: 1;
 }
 .btn:hover {
   transform: scale(1.15);
-  opacity: 0.7;
+  opacity: 0.8;
+  box-shadow: -1px 5px 5px 3px #c2c2c2;
 }
 
 /*# sourceMappingURL=style.css.map */
