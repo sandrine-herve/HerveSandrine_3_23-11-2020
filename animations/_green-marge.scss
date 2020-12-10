@@ -5,24 +5,54 @@
 	background-color:transparent;
 }
 
+.extend-2{
+  width:20px;
+  color:transparent;
+  background-color:transparent;
+  }
+
+& .price{
+  display:inline-block;
+
+   & .extend{
+   width:30px;
+   color:transparent;
+   background-color:transparent;
+   height:25px;
+   position:relative;
+   bottom:15px;
+   left:10px;
+   padding-bottom:10px;
+   padding-left:5px;
+   }
+
+   & .extend-1{
+   width:30px;
+   color:transparent;
+   background-color:transparent;
+   height:15px;
+   }
+
+}
+
 &:hover{
 
   & .box{
     position:relative; 
-    left:260px;
-    bottom:51px;
-    margin-right:0px;
+    left:80%;
+    bottom:66px;
     height:55px;
     width:20%;
     background-color:$color-thd;
     border-radius: 0px 15px  15px 0px;
+    margin-right:0px;
     margin-bottom:15px;
     padding-top:10px;
     animation-name:box;
-	animation-duration:700ms;
-	animation-delay:50ms;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease-out;
+	  animation-duration:700ms;
+	  animation-delay:50ms;
+	  animation-fill-mode: forwards;
+	  animation-timing-function: ease-out;
     opacity:0;
     }
   
@@ -36,19 +66,90 @@
     padding:5px;
     border-radius:50%;
     animation-name:icone;
-	animation-duration:500ms;
-	animation-delay:200ms;
-	animation-fill-mode: forwards;
-	animation-timing-function: linear;
+	  animation-duration:500ms;
+	  animation-delay:200ms;
+	  animation-fill-mode: forwards;
+	  animation-timing-function: linear;
     opacity:0;
     }
 
     & .price{
+    background-color:white;
     animation-name:price;
-	animation-duration:470ms;
-	animation-delay:50ms;
-	animation-fill-mode: forwards;
-	animation-timing-function: linear;
+	  animation-duration:500ms;
+	  animation-delay:50ms;
+	  animation-fill-mode: forwards;
+	  animation-timing-function: linear;
+
+      & .extend{
+      color:black;
+      background-color:white;
+      padding-bottom:2px;
+      animation-name:extend;
+      animation-duration:470ms;
+      animation-delay:50ms;
+      animation-fill-mode: forwards;
+      animation-timing-function: linear;
+      opacity:0;
+      }
+
+      & .extend-1{
+      color:black;
+      background-color:white;
+      width:20px;
+      position:relative;
+      bottom:43px;
+      left:72px;
+      padding-bottom:12px;
+      padding-left:15px;
+      padding-right:20px;
+      animation-name:extend;
+      animation-duration:370ms;
+      animation-delay:50ms;
+      animation-fill-mode: forwards;
+      animation-timing-function: linear;
+      opacity:0;
+      }
+    }
+
+    & .price2{
+    height:25px;
+    position:relative;
+    bottom:35px;
+    left:5px;
+    background-color:white;
+    animation-name:price;
+    animation-duration:500ms;
+    animation-delay:50ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+
+      & .extend-2{
+      color:black;
+      background-color:white;
+      width:20px;
+      position:relative;
+      left:10px;
+      bottom:15px;
+      padding-bottom:12px;
+      padding-left:15px;
+      animation-name:extend;
+      animation-duration:370ms;
+      animation-delay:50ms;
+      animation-fill-mode: forwards;
+      animation-timing-function: linear;
+      opacity:0;
+      }
+    }
+
+
+    & .price1{
+    background-color:white;
+    animation-name:price;
+    animation-duration:500ms;
+    animation-delay:50ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
     }
 }
 }
@@ -57,7 +158,7 @@
 
 0%{
    opacity:0;
-   transform:translateX(50px);
+   transform:translateX(60px);
    }
 
 50%{
@@ -102,4 +203,22 @@
 }
 
 }
-	
+
+
+@keyframes extend{
+
+0%{
+  opacity:0;
+  transform:translate(0px,0px);
+}
+
+70%{
+  opacity:0;
+}
+
+100%{
+  
+  opacity:1;
+  transform:translate(-60px,0px);
+}
+}
