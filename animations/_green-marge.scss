@@ -49,10 +49,10 @@
     margin-bottom:15px;
     padding-top:10px;
     animation-name:box;
-	  animation-duration:700ms;
-	  animation-delay:50ms;
+	  animation-duration:5000ms;
+	  animation-delay:400ms;
 	  animation-fill-mode: forwards;
-	  animation-timing-function: ease-out;
+	  animation-timing-function: linear;
     opacity:0;
     }
   
@@ -66,7 +66,7 @@
     padding:5px;
     border-radius:50%;
     animation-name:icone;
-	  animation-duration:500ms;
+	  animation-duration:700ms;
 	  animation-delay:200ms;
 	  animation-fill-mode: forwards;
 	  animation-timing-function: linear;
@@ -157,18 +157,30 @@
 @keyframes box{
 
 0%{
-   opacity:0;
-   transform:translateX(60px);
-   }
+  opacity:0;
+  transform:translate(0px,0px);
+}
+
+10%{
+  opacity:1;
+}
+
+10%{
+}
+
+20%{
+  opacity:1;
+}
 
 50%{
-	opacity:1;
-}   
+  opacity:1;
+}
 
 100%{
-   opacity:1;
+  opacity:1;
+  transform:translate(0px,0px);
+}
 
-   }
 }
 
 
@@ -221,4 +233,65 @@
   opacity:1;
   transform:translate(-60px,0px);
 }
+}
+
+
+.ape-1{
+
+& i{
+  color:transparent;
+  background-color:transparent;
+}
+
+& .price{
+  display:inline-block;
+}
+
+&:hover{
+
+  & .box{
+    position:relative; 
+    left:80%;
+    bottom:85px;
+    height:65px;
+    width:20%;
+    background-color:$color-thd;
+    border-radius: 0px 15px  15px 0px;
+    margin-right:0px;
+    margin-bottom:15px;
+    padding-top:10px;
+    animation-name:box;
+    animation-duration:700ms;
+    animation-delay:50ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    opacity:0;
+    }
+  
+  & i{
+    position:relative;
+    left:30%;
+    top:20%;
+    font-size:12px;
+    color:$color-thd;
+    background-color:white;
+    padding:5px;
+    border-radius:50%;
+    animation-name:icone;
+    animation-duration:500ms;
+    animation-delay:200ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    opacity:0;
+    }
+
+    & .price{
+    background-color:white;
+    animation-name:price;
+    animation-duration:500ms;
+    animation-delay:50ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    }
+  }
 }
