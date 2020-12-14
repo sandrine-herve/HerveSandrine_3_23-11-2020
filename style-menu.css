@@ -67,27 +67,55 @@ section h1 .fa-heart {
   padding-bottom: 5px;
 }
 .menu .ape {
-  width: 90%;
-  height: 55px;
+  width: 92%;
+  height: 65px;
   background-color: white;
   margin-bottom: 15px;
-  padding-top: 10px;
   padding-left: 10px;
   border-radius: 15px;
   box-shadow: -1px 5px 5px 3px #e8e8e8;
   margin-left: 10px;
 }
-.menu .ape strong {
-  font-size: 18px;
+.menu .ape h4 {
+  font-weight: bold;
+  font-size: 15px;
+  margin: 0px;
+  padding-top: 10px;
 }
 .menu .ape span {
   font-size: 14px;
+  position: relative;
+  bottom: 10px;
 }
-.menu .ape .price {
+.menu .ape .price2 {
   font-weight: bold;
   font-size: 14px;
   float: right;
-  margin-right: 10px;
+  padding-right: 10px;
+  padding-left: 15px;
+  position: relative;
+  right: 10px;
+  bottom: 15px;
+}
+.menu .ape .price1 {
+  font-weight: bold;
+  font-size: 14px;
+  float: right;
+  padding-right: 10px;
+  padding-left: 15px;
+  position: relative;
+  right: 10px;
+  bottom: 15px;
+}
+.menu .ape .price {
+  height: 25px;
+  font-weight: bold;
+  font-size: 14px;
+  float: right;
+  padding-right: 10px;
+  padding-left: 15px;
+  position: relative;
+  bottom: 15px;
 }
 
 .commander {
@@ -98,6 +126,70 @@ section h1 .fa-heart {
 }
 .commander .btn {
   width: 50%;
+}
+
+.plat .ape-1 {
+  width: 92%;
+  height: 75px;
+  background-color: white;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  border-radius: 15px;
+  box-shadow: -1px 5px 5px 3px #e8e8e8;
+  margin-left: 10px;
+}
+.plat .ape-1 h4 {
+  font-weight: bold;
+  font-size: 15px;
+  margin: 0px;
+  padding-top: 10px;
+}
+.plat .ape-1 span {
+  font-size: 14px;
+  position: relative;
+  bottom: 15px;
+}
+.plat .ape-1 .price {
+  height: 23px;
+  font-weight: bold;
+  font-size: 14px;
+  float: right;
+  padding-right: 10px;
+  padding-left: 5px;
+  position: relative;
+  bottom: 25px;
+}
+
+.dessert .ape-1 {
+  width: 92%;
+  height: 75px;
+  background-color: white;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  border-radius: 15px;
+  box-shadow: -1px 5px 5px 3px #e8e8e8;
+  margin-left: 10px;
+}
+.dessert .ape-1 h4 {
+  font-weight: bold;
+  font-size: 15px;
+  margin: 0px;
+  padding-top: 10px;
+}
+.dessert .ape-1 span {
+  font-size: 14px;
+  position: relative;
+  bottom: 15px;
+}
+.dessert .ape-1 .price {
+  height: 23px;
+  font-weight: bold;
+  font-size: 14px;
+  float: right;
+  padding-right: 10px;
+  padding-left: 5px;
+  position: relative;
+  bottom: 25px;
 }
 
 footer {
@@ -175,28 +267,54 @@ section .fa-heart:hover::before {
 }
 
 .loader {
-  width: 95%;
-  height: 100%;
   position: absolute;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  margin: 0;
+  width: 97%;
+  height: 120%;
+  background-color: white;
+  opacity: 1;
+  animation-name: loader2;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
 }
 
+@keyframes loader2 {
+  0% {
+    opacity: 1;
+    z-index: 1000;
+  }
+  10% {
+    opacity: 1;
+    z-index: 1000;
+  }
+  50% {
+    opacity: 1;
+    z-index: 1000;
+  }
+  80% {
+    opacity: 0.8;
+    z-index: 1000;
+  }
+  90% {
+    opacity: 0.4;
+    z-index: 1000;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1000;
+  }
+}
 .custom-loader {
+  position: absolute;
+  left: 25%;
+  top: 30%;
   cursor: progress;
-  position: absolute;
   background: radial-gradient(closest-side, #99E2D0, #9356DC, #fff);
-}
-
-.custom-loader {
   border: 10px solid #9356DC;
   border-top: 10px solid #FF79DA;
   border-image: linear-gradient(#9356DC, #FF79DA) 30;
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
+  width: 130px;
+  height: 130px;
   opacity: 1;
   animation-name: custom-loader1;
   animation-duration: 10s;
@@ -207,6 +325,7 @@ section .fa-heart:hover::before {
   0% {
     transform: rotate(0deg) scale(1);
     opacity: 1;
+    background-color: white;
   }
   10% {
     transform: rotate(15deg) scale(1);
@@ -221,22 +340,303 @@ section .fa-heart:hover::before {
     transform: rotate(-360deg) scale(1);
   }
 }
-body {
-  opacity: 0;
-  animation-name: body;
-  animation-duration: 5s;
-  animation-delay: 500ms;
+.apetizer .ape {
+  animation-name: defil;
+  animation-duration: 2000ms;
+  animation-delay: 100ms;
   animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  opacity: 0;
 }
 
-@keyframes body {
+.plat .ape {
+  animation-name: defil;
+  animation-duration: 2000ms;
+  animation-delay: 2100ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  opacity: 0;
+}
+.plat .ape-1 {
+  animation-name: defil;
+  animation-duration: 2000ms;
+  animation-delay: 2100ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  opacity: 0;
+}
+
+.dessert .ape {
+  animation-name: defil;
+  animation-duration: 2000ms;
+  animation-delay: 4100ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  opacity: 0;
+}
+.dessert .ape-1 {
+  animation-name: defil;
+  animation-duration: 2000ms;
+  animation-delay: 4100ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  opacity: 0;
+}
+
+@keyframes defil {
   0% {
     opacity: 0;
+    transform: translateY(-40px);
+  }
+  50% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translatY(0px);
+  }
+}
+.ape i {
+  color: transparent;
+  background-color: transparent;
+}
+.ape .extend-2 {
+  width: 20px;
+  color: transparent;
+  background-color: transparent;
+}
+.ape .price {
+  display: inline-block;
+}
+.ape .price .extend {
+  width: 30px;
+  color: transparent;
+  background-color: transparent;
+  height: 25px;
+  position: relative;
+  bottom: 15px;
+  left: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+}
+.ape .price .extend-1 {
+  width: 30px;
+  color: transparent;
+  background-color: transparent;
+  height: 15px;
+}
+.ape:hover .box {
+  position: relative;
+  left: 80%;
+  bottom: 66px;
+  height: 55px;
+  width: 20%;
+  background-color: #99E2D0;
+  border-radius: 0px 15px 15px 0px;
+  margin-right: 0px;
+  margin-bottom: 15px;
+  padding-top: 10px;
+  animation-name: box;
+  animation-duration: 5000ms;
+  animation-delay: 400ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  opacity: 0;
+}
+.ape:hover i {
+  position: relative;
+  left: 30%;
+  top: 20%;
+  font-size: 12px;
+  color: #99E2D0;
+  background-color: white;
+  padding: 5px;
+  border-radius: 50%;
+  animation-name: icone;
+  animation-duration: 700ms;
+  animation-delay: 200ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  opacity: 0;
+}
+.ape:hover .price {
+  background-color: white;
+  animation-name: price;
+  animation-duration: 500ms;
+  animation-delay: 50ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+.ape:hover .price .extend {
+  color: black;
+  background-color: white;
+  padding-bottom: 2px;
+  animation-name: extend;
+  animation-duration: 470ms;
+  animation-delay: 50ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  opacity: 0;
+}
+.ape:hover .price .extend-1 {
+  color: black;
+  background-color: white;
+  width: 20px;
+  position: relative;
+  bottom: 43px;
+  left: 72px;
+  padding-bottom: 12px;
+  padding-left: 15px;
+  padding-right: 20px;
+  animation-name: extend;
+  animation-duration: 370ms;
+  animation-delay: 50ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  opacity: 0;
+}
+.ape:hover .price2 {
+  height: 25px;
+  position: relative;
+  bottom: 35px;
+  left: 5px;
+  background-color: white;
+  animation-name: price;
+  animation-duration: 500ms;
+  animation-delay: 50ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+.ape:hover .price2 .extend-2 {
+  color: black;
+  background-color: white;
+  width: 20px;
+  position: relative;
+  left: 10px;
+  bottom: 15px;
+  padding-bottom: 12px;
+  padding-left: 15px;
+  animation-name: extend;
+  animation-duration: 370ms;
+  animation-delay: 50ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  opacity: 0;
+}
+.ape:hover .price1 {
+  background-color: white;
+  animation-name: price;
+  animation-duration: 500ms;
+  animation-delay: 50ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes box {
+  0% {
+    opacity: 0;
+    transform: translate(0px, 0px);
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes icone {
+  0% {
+    opacity: 0;
+    transform: rotate(-360deg);
+  }
+  50% {
+    opacity: 1;
   }
   100% {
     opacity: 1;
   }
 }
+@keyframes price {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(-60px, 0px);
+  }
+}
+@keyframes extend {
+  0% {
+    opacity: 0;
+    transform: translate(0px, 0px);
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-60px, 0px);
+  }
+}
+.ape-1 i {
+  color: transparent;
+  background-color: transparent;
+}
+.ape-1 .price {
+  display: inline-block;
+}
+.ape-1:hover .box {
+  position: relative;
+  left: 80%;
+  bottom: 85px;
+  height: 65px;
+  width: 20%;
+  background-color: #99E2D0;
+  border-radius: 0px 15px 15px 0px;
+  margin-right: 0px;
+  margin-bottom: 15px;
+  padding-top: 10px;
+  animation-name: box;
+  animation-duration: 700ms;
+  animation-delay: 50ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  opacity: 0;
+}
+.ape-1:hover i {
+  position: relative;
+  left: 30%;
+  top: 20%;
+  font-size: 12px;
+  color: #99E2D0;
+  background-color: white;
+  padding: 5px;
+  border-radius: 50%;
+  animation-name: icone;
+  animation-duration: 500ms;
+  animation-delay: 200ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  opacity: 0;
+}
+.ape-1:hover .price {
+  background-color: white;
+  animation-name: price;
+  animation-duration: 500ms;
+  animation-delay: 50ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
 .btn {
   font-size: 15px;
   padding: 15px;
