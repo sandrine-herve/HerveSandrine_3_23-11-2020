@@ -49,11 +49,32 @@
     margin-bottom:15px;
     padding-top:10px;
     animation-name:box;
-	  animation-duration:5000ms;
-	  animation-delay:400ms;
+	  animation-duration:1000ms;
+	  animation-delay:100ms;
 	  animation-fill-mode: forwards;
 	  animation-timing-function: linear;
     opacity:0;
+
+    @media (min-width:415px) and (max-width:560px){
+    width:21%;
+    }
+
+    @media (min-width:561px) and (max-width:1024px){
+    width:20.5%;
+    height:80px;
+    margin:0px;
+    position:relative;
+    bottom:81px;
+    }
+
+    @media (min-width:1025px){
+    width:20%;
+    height:80px;
+    margin:0px;
+    position:relative;
+    bottom:81px;
+    }
+
     }
   
   & i{
@@ -71,6 +92,16 @@
 	  animation-fill-mode: forwards;
 	  animation-timing-function: linear;
     opacity:0;
+
+    @media (min-width:561px) and (max-width:1024px){
+    margin-left:10%;
+    margin-top:6%;
+    }
+
+    @media (min-width:1025px){
+    margin-left:9%;
+    margin-top:3%;
+    }
     }
 
     & .price{
@@ -80,6 +111,19 @@
 	  animation-delay:50ms;
 	  animation-fill-mode: forwards;
 	  animation-timing-function: linear;
+
+    @media (min-width:415px) and (max-width:560px){
+    margin-right:8%;
+    }
+
+    @media (min-width:561px) and (max-width:1024px){
+    margin-right:9%;
+    padding-right:50px;
+    }
+
+    @media (min-width:1025px){
+    margin-right:14%;
+    }
 
       & .extend{
       color:black;
@@ -91,6 +135,23 @@
       animation-fill-mode: forwards;
       animation-timing-function: linear;
       opacity:0;
+
+
+      @media (min-width:415px) and (max-width:658px){
+      display:none;
+      }
+
+      @media (min-width:561px) and (max-width:615px){
+      display:flex;
+      }
+
+      @media (min-width:659px) and (max-width:1024px){
+      display:none;
+      }
+
+      @media (min-width:1025px){
+      display:none;
+      }
       }
 
       & .extend-1{
@@ -109,13 +170,28 @@
       animation-fill-mode: forwards;
       animation-timing-function: linear;
       opacity:0;
+
+      @media (min-width:395px) and (max-width:560px){
+      display:none;
+      }
+
+       @media (min-width:659px) and (max-width:1024px){
+      display:none;
+      }
+
+      @media (min-width:415px) and (max-width:560px){
+      display:none;
+      }
+
+      @media (min-width:1025px){
+      display:none;
+      }
       }
     }
 
     & .price2{
     height:25px;
     position:relative;
-    bottom:35px;
     left:5px;
     background-color:white;
     animation-name:price;
@@ -123,6 +199,19 @@
     animation-delay:50ms;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
+
+    @media (min-width:561px) and (max-width:1024px){
+    margin-right:11%;
+    }
+
+    @media (min-width:415px) and (max-width:560px){
+    
+    }
+
+    @media (min-width:1025px){
+    margin-right:14%;
+    }
+
 
       & .extend-2{
       color:black;
@@ -139,6 +228,19 @@
       animation-fill-mode: forwards;
       animation-timing-function: linear;
       opacity:0;
+
+
+      @media (min-width:395px) and (max-width:560px){
+      display:none;
+      }
+
+      @media (min-width:559px) and (max-width:1024px){
+      display:none;
+      }
+
+      @media (min-width:1025px){
+      display:none;
+      }
       }
     }
 
@@ -150,6 +252,23 @@
     animation-delay:50ms;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
+
+    @media (min-width:415px) and (max-width:560px){
+    margin-right:6.5%;
+    }
+
+    @media (min-width:561px) and (max-width:1024px){
+    margin-right:8%;
+    }
+
+    @media (min-width:890px) and (max-width:1024px){
+    width:8%;
+    }
+
+    @media (min-width:1025px){
+    margin-right:14%;
+    }
+
     }
 }
 }
@@ -266,6 +385,27 @@
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
     opacity:0;
+
+    @media (min-width:415px) and (max-width:560px){
+    width:21%;
+    }
+
+    @media (min-width:561px) and (max-width:1024px){
+    width:21%;
+    height:80px;
+    margin:0px;
+    position:relative;
+    bottom:102px;
+    }
+
+    @media (min-width:1025px){
+    width:20%;
+    height:80px;
+    margin:0px;
+    position:relative;
+    bottom:102px;
+    }
+
     }
   
   & i{
@@ -283,6 +423,16 @@
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     opacity:0;
+
+    @media (min-width:561px) and (max-width:1024px){
+    margin-left:10%;
+    margin-top:6%;
+    }
+
+    @media (min-width:1025px){
+    margin-left:9%;
+    margin-top:3%;
+    }
     }
 
     & .price{
@@ -292,6 +442,20 @@
     animation-delay:50ms;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
+
+     @media (min-width:415px) and (max-width:560px){
+    margin-right:8%;
+    }
+
+    @media (min-width:561px) and (max-width:1024px){
+    margin-right:9%;
+    padding-right:48px;
+    }
+
+    @media (min-width:1025px){
+    margin-right:14%;
+    }
+
     }
   }
 }

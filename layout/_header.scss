@@ -1,8 +1,15 @@
 header{
+margin:0px;
 	& img{
 	    width: 50%;
 	    margin-top: 20px;
 	    margin-bottom:15px;
-	    margin-left:90px;
+	    margin-left:23%;
+	    object-fit:contain;
+	    }
+
+	    @media (min-width:1025px){
+        width:75%;
+        margin-left:15%;
 	    }
 }

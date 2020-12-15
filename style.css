@@ -1,4 +1,8 @@
 @charset "UTF-8";
+body {
+  margin: 0px;
+}
+
 form {
   width: 100%;
   height: 50px;
@@ -44,10 +48,23 @@ form i {
 .funct {
   padding-bottom: 40px;
 }
+@media (min-width: 1025px) {
+  .funct {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
 .funct h1 {
   padding-left: 20px;
   font-family: Roboto;
   font-size: 25px;
+}
+@media (min-width: 1025px) {
+  .funct h1 {
+    width: 100%;
+  }
 }
 
 .step {
@@ -55,19 +72,34 @@ form i {
   display: flex;
   flex-direction: row;
 }
+@media (min-width: 1025px) {
+  .step {
+    width: 30%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+}
 .step .number {
   background-color: #9356DC;
-  width: 6%;
-  height: 9%;
-  border-radius: 40px 40px 40px 40px;
-  padding-left: 6px;
-  padding-top: 2px;
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
   position: relative;
   top: 22px;
-  left: 10px;
+  left: 9px;
   font-family: Roboto;
   color: white;
   font-size: 15px;
+  text-indent: 3px;
+}
+@media (min-width: 561px) and (max-width: 1024px) {
+  .step .number {
+    margin-left: 20%;
+    width: 22px;
+    height: 20px;
+    padding-top: 2px;
+    padding-left: 1px;
+  }
 }
 
 .link {
@@ -89,15 +121,27 @@ form i {
   font-weight: bold;
   background-color: #f5f5f8;
   margin-bottom: 20px;
-  padding-left: 30px;
+  padding-left: 15%;
   padding-top: 25px;
   padding-bottom: 25px;
   border-radius: 20px 20px 20px 20px;
   box-shadow: -1px 5px 5px 3px #e8e8e8;
 }
+@media (min-width: 561px) and (max-width: 1024px) {
+  .link a {
+    width: 70%;
+    padding-left: 20%;
+    font-size: 20px;
+  }
+}
 .link i {
   color: grey;
-  padding-right: 15px;
+  padding-right: 5%;
+}
+@media (min-width: 561px) and (max-width: 1024px) {
+  .link i {
+    padding-right: 10%;
+  }
 }
 
 section {
@@ -105,9 +149,6 @@ section {
   flex-direction: column;
   background-color: #f5f5f8;
   width: 100%;
-  padding-top: 0px;
-  padding-bottom: 10px;
-  margin-top: 0px;
 }
 section h1 {
   font-family: Roboto;
@@ -124,13 +165,37 @@ section .vignets {
   box-shadow: -1px 5px 5px 3px #e8e8e8;
   width: 90%;
   height: 220px;
-  margin-left: 15px;
+  margin-left: 5%;
+}
+@media (min-width: 561px) and (max-width: 1024px) {
+  section .vignets {
+    width: 80%;
+    height: 300px;
+    margin-left: 10%;
+  }
+}
+@media (min-width: 1025px) {
+  section .vignets {
+    width: 80%;
+    height: 350px;
+    margin-left: 10%;
+  }
 }
 section .vignets img {
   width: 100%;
   height: 150px;
   border-radius: 10px 10px 0px 0px;
   object-fit: cover;
+}
+@media (min-width: 561px) and (max-width: 1024px) {
+  section .vignets img {
+    height: 200px;
+  }
+}
+@media (min-width: 1025px) {
+  section .vignets img {
+    height: 250px;
+  }
 }
 section .vignets em {
   width: 70%;
@@ -140,6 +205,11 @@ section .vignets em {
   float: left;
   padding-left: 10px;
   padding-top: 15px;
+}
+@media (min-width: 561px) and (max-width: 1024px) {
+  section .vignets em {
+    font-size: 18px;
+  }
 }
 section .vignets .rest {
   text-decoration: none;
@@ -152,15 +222,29 @@ section .new {
   font-size: 15px;
   font-weight: bold;
   background-color: #99E2D0;
-  width: 18%;
-  padding: 5px 15px 5px 5px;
+  width: 55px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 12px;
+  margin-left: 6%;
   position: relative;
-  left: 210px;
+  left: 65%;
   top: 40px;
+}
+@media (min-width: 561px) and (max-width: 1024px) {
+  section .new {
+    margin-left: 10%;
+  }
+}
+@media (min-width: 1025px) {
+  section .new {
+    margin-left: 15%;
+  }
 }
 section i {
   position: relative;
-  left: 250px;
+  left: 80%;
   bottom: 50px;
 }
 section .fa-heart {
@@ -178,11 +262,41 @@ footer {
 footer ul {
   padding-left: 20px;
 }
+@media (min-width: 561px) and (max-width: 1024px) {
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 1025px) {
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
 footer img {
   filter: invert(200%);
   padding-bottom: 10px;
   width: 35%;
   font-size: 10px;
+}
+@media (min-width: 561px) and (max-width: 1024px) {
+  footer img {
+    padding-right: 30%;
+    padding-left: 30%;
+    padding-bottom: 20px;
+  }
+}
+@media (min-width: 1025px) {
+  footer img {
+    padding-right: 30%;
+    padding-left: 30%;
+    padding-bottom: 30px;
+  }
 }
 footer li {
   font-family: Roboto;
@@ -200,11 +314,21 @@ footer i {
   padding-right: 12px;
 }
 
+header {
+  margin: 0px;
+}
 header img {
   width: 50%;
   margin-top: 20px;
   margin-bottom: 15px;
-  margin-left: 90px;
+  margin-left: 23%;
+  object-fit: contain;
+}
+@media (min-width: 1025px) {
+  header {
+    width: 75%;
+    margin-left: 15%;
+  }
 }
 
 @font-face {
@@ -243,80 +367,489 @@ section .fa-heart:hover::before {
   cursor: pointer;
 }
 
-.loader {
-  position: absolute;
-  margin: 0;
-  width: 97%;
-  height: 120%;
+.apetizer .ape {
+  animation-name: defil;
+  animation-duration: 2000ms;
+  animation-delay: 100ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  opacity: 0;
+}
+
+.plat .ape {
+  animation-name: defil;
+  animation-duration: 2000ms;
+  animation-delay: 2100ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  opacity: 0;
+}
+.plat .ape-1 {
+  animation-name: defil;
+  animation-duration: 2000ms;
+  animation-delay: 2100ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  opacity: 0;
+}
+
+.dessert .ape {
+  animation-name: defil;
+  animation-duration: 2000ms;
+  animation-delay: 4100ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  opacity: 0;
+}
+.dessert .ape-1 {
+  animation-name: defil;
+  animation-duration: 2000ms;
+  animation-delay: 4100ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  opacity: 0;
+}
+
+@keyframes defil {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  50% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translatY(0px);
+  }
+}
+.ape i {
+  color: transparent;
+  background-color: transparent;
+}
+.ape .extend-2 {
+  width: 20px;
+  color: transparent;
+  background-color: transparent;
+}
+.ape .price {
+  display: inline-block;
+}
+.ape .price .extend {
+  width: 30px;
+  color: transparent;
+  background-color: transparent;
+  height: 25px;
+  position: relative;
+  bottom: 15px;
+  left: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+}
+.ape .price .extend-1 {
+  width: 30px;
+  color: transparent;
+  background-color: transparent;
+  height: 15px;
+}
+.ape:hover .box {
+  position: relative;
+  left: 80%;
+  bottom: 66px;
+  height: 55px;
+  width: 20%;
+  background-color: #99E2D0;
+  border-radius: 0px 15px 15px 0px;
+  margin-right: 0px;
+  margin-bottom: 15px;
+  padding-top: 10px;
+  animation-name: box;
+  animation-duration: 1000ms;
+  animation-delay: 100ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  opacity: 0;
+}
+@media (min-width: 415px) and (max-width: 560px) {
+  .ape:hover .box {
+    width: 21%;
+  }
+}
+@media (min-width: 561px) and (max-width: 1024px) {
+  .ape:hover .box {
+    width: 20.5%;
+    height: 80px;
+    margin: 0px;
+    position: relative;
+    bottom: 81px;
+  }
+}
+@media (min-width: 1025px) {
+  .ape:hover .box {
+    width: 20%;
+    height: 80px;
+    margin: 0px;
+    position: relative;
+    bottom: 81px;
+  }
+}
+.ape:hover i {
+  position: relative;
+  left: 30%;
+  top: 20%;
+  font-size: 12px;
+  color: #99E2D0;
   background-color: white;
-  opacity: 1;
-  animation-name: loader2;
-  animation-duration: 10s;
+  padding: 5px;
+  border-radius: 50%;
+  animation-name: icone;
+  animation-duration: 700ms;
+  animation-delay: 200ms;
   animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  opacity: 0;
+}
+@media (min-width: 561px) and (max-width: 1024px) {
+  .ape:hover i {
+    margin-left: 10%;
+    margin-top: 6%;
+  }
+}
+@media (min-width: 1025px) {
+  .ape:hover i {
+    margin-left: 9%;
+    margin-top: 3%;
+  }
+}
+.ape:hover .price {
+  background-color: white;
+  animation-name: price;
+  animation-duration: 500ms;
+  animation-delay: 50ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+@media (min-width: 415px) and (max-width: 560px) {
+  .ape:hover .price {
+    margin-right: 8%;
+  }
+}
+@media (min-width: 561px) and (max-width: 1024px) {
+  .ape:hover .price {
+    margin-right: 9%;
+    padding-right: 50px;
+  }
+}
+@media (min-width: 1025px) {
+  .ape:hover .price {
+    margin-right: 14%;
+  }
+}
+.ape:hover .price .extend {
+  color: black;
+  background-color: white;
+  padding-bottom: 2px;
+  animation-name: extend;
+  animation-duration: 470ms;
+  animation-delay: 50ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  opacity: 0;
+}
+@media (min-width: 415px) and (max-width: 658px) {
+  .ape:hover .price .extend {
+    display: none;
+  }
+}
+@media (min-width: 561px) and (max-width: 615px) {
+  .ape:hover .price .extend {
+    display: flex;
+  }
+}
+@media (min-width: 659px) and (max-width: 1024px) {
+  .ape:hover .price .extend {
+    display: none;
+  }
+}
+@media (min-width: 1025px) {
+  .ape:hover .price .extend {
+    display: none;
+  }
+}
+.ape:hover .price .extend-1 {
+  color: black;
+  background-color: white;
+  width: 20px;
+  position: relative;
+  bottom: 43px;
+  left: 72px;
+  padding-bottom: 12px;
+  padding-left: 15px;
+  padding-right: 20px;
+  animation-name: extend;
+  animation-duration: 370ms;
+  animation-delay: 50ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  opacity: 0;
+}
+@media (min-width: 395px) and (max-width: 560px) {
+  .ape:hover .price .extend-1 {
+    display: none;
+  }
+}
+@media (min-width: 659px) and (max-width: 1024px) {
+  .ape:hover .price .extend-1 {
+    display: none;
+  }
+}
+@media (min-width: 415px) and (max-width: 560px) {
+  .ape:hover .price .extend-1 {
+    display: none;
+  }
+}
+@media (min-width: 1025px) {
+  .ape:hover .price .extend-1 {
+    display: none;
+  }
+}
+.ape:hover .price2 {
+  height: 25px;
+  position: relative;
+  left: 5px;
+  background-color: white;
+  animation-name: price;
+  animation-duration: 500ms;
+  animation-delay: 50ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+@media (min-width: 561px) and (max-width: 1024px) {
+  .ape:hover .price2 {
+    margin-right: 11%;
+  }
+}
+@media (min-width: 1025px) {
+  .ape:hover .price2 {
+    margin-right: 14%;
+  }
+}
+.ape:hover .price2 .extend-2 {
+  color: black;
+  background-color: white;
+  width: 20px;
+  position: relative;
+  left: 10px;
+  bottom: 15px;
+  padding-bottom: 12px;
+  padding-left: 15px;
+  animation-name: extend;
+  animation-duration: 370ms;
+  animation-delay: 50ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  opacity: 0;
+}
+@media (min-width: 395px) and (max-width: 560px) {
+  .ape:hover .price2 .extend-2 {
+    display: none;
+  }
+}
+@media (min-width: 559px) and (max-width: 1024px) {
+  .ape:hover .price2 .extend-2 {
+    display: none;
+  }
+}
+@media (min-width: 1025px) {
+  .ape:hover .price2 .extend-2 {
+    display: none;
+  }
+}
+.ape:hover .price1 {
+  background-color: white;
+  animation-name: price;
+  animation-duration: 500ms;
+  animation-delay: 50ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+@media (min-width: 415px) and (max-width: 560px) {
+  .ape:hover .price1 {
+    margin-right: 6.5%;
+  }
+}
+@media (min-width: 561px) and (max-width: 1024px) {
+  .ape:hover .price1 {
+    margin-right: 8%;
+  }
+}
+@media (min-width: 890px) and (max-width: 1024px) {
+  .ape:hover .price1 {
+    width: 8%;
+  }
+}
+@media (min-width: 1025px) {
+  .ape:hover .price1 {
+    margin-right: 14%;
+  }
 }
 
-@keyframes loader2 {
+@keyframes box {
   0% {
-    opacity: 1;
-    z-index: 1000;
+    opacity: 0;
+    transform: translate(0px, 0px);
   }
   10% {
     opacity: 1;
-    z-index: 1000;
+  }
+  20% {
+    opacity: 1;
   }
   50% {
     opacity: 1;
-    z-index: 1000;
-  }
-  80% {
-    opacity: 0.8;
-    z-index: 1000;
-  }
-  90% {
-    opacity: 0.4;
-    z-index: 1000;
   }
   100% {
-    opacity: 0;
-    z-index: -1000;
+    opacity: 1;
+    transform: translate(0px, 0px);
   }
 }
-.custom-loader {
-  position: absolute;
-  left: 25%;
-  top: 30%;
-  cursor: progress;
-  background: radial-gradient(closest-side, #99E2D0, #9356DC, #fff);
-  border: 10px solid #9356DC;
-  border-top: 10px solid #FF79DA;
-  border-image: linear-gradient(#9356DC, #FF79DA) 30;
-  width: 130px;
-  height: 130px;
-  opacity: 1;
-  animation-name: custom-loader1;
-  animation-duration: 10s;
+@keyframes icone {
+  0% {
+    opacity: 0;
+    transform: rotate(-360deg);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes price {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(-60px, 0px);
+  }
+}
+@keyframes extend {
+  0% {
+    opacity: 0;
+    transform: translate(0px, 0px);
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-60px, 0px);
+  }
+}
+.ape-1 i {
+  color: transparent;
+  background-color: transparent;
+}
+.ape-1 .price {
+  display: inline-block;
+}
+.ape-1:hover .box {
+  position: relative;
+  left: 80%;
+  bottom: 85px;
+  height: 65px;
+  width: 20%;
+  background-color: #99E2D0;
+  border-radius: 0px 15px 15px 0px;
+  margin-right: 0px;
+  margin-bottom: 15px;
+  padding-top: 10px;
+  animation-name: box;
+  animation-duration: 700ms;
+  animation-delay: 50ms;
   animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  opacity: 0;
+}
+@media (min-width: 415px) and (max-width: 560px) {
+  .ape-1:hover .box {
+    width: 21%;
+  }
+}
+@media (min-width: 561px) and (max-width: 1024px) {
+  .ape-1:hover .box {
+    width: 21%;
+    height: 80px;
+    margin: 0px;
+    position: relative;
+    bottom: 102px;
+  }
+}
+@media (min-width: 1025px) {
+  .ape-1:hover .box {
+    width: 20%;
+    height: 80px;
+    margin: 0px;
+    position: relative;
+    bottom: 102px;
+  }
+}
+.ape-1:hover i {
+  position: relative;
+  left: 30%;
+  top: 20%;
+  font-size: 12px;
+  color: #99E2D0;
+  background-color: white;
+  padding: 5px;
+  border-radius: 50%;
+  animation-name: icone;
+  animation-duration: 500ms;
+  animation-delay: 200ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  opacity: 0;
+}
+@media (min-width: 561px) and (max-width: 1024px) {
+  .ape-1:hover i {
+    margin-left: 10%;
+    margin-top: 6%;
+  }
+}
+@media (min-width: 1025px) {
+  .ape-1:hover i {
+    margin-left: 9%;
+    margin-top: 3%;
+  }
+}
+.ape-1:hover .price {
+  background-color: white;
+  animation-name: price;
+  animation-duration: 500ms;
+  animation-delay: 50ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+@media (min-width: 415px) and (max-width: 560px) {
+  .ape-1:hover .price {
+    margin-right: 8%;
+  }
+}
+@media (min-width: 561px) and (max-width: 1024px) {
+  .ape-1:hover .price {
+    margin-right: 9%;
+    padding-right: 48px;
+  }
+}
+@media (min-width: 1025px) {
+  .ape-1:hover .price {
+    margin-right: 14%;
+  }
 }
 
-@keyframes custom-loader1 {
-  0% {
-    transform: rotate(0deg) scale(1);
-    opacity: 1;
-    background-color: white;
-  }
-  10% {
-    transform: rotate(15deg) scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: rotate(-180deg) scale(1.4);
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: rotate(-360deg) scale(1);
-  }
-}
 .btn {
   font-size: 15px;
   padding: 15px;
@@ -332,6 +865,18 @@ section .fa-heart:hover::before {
   transition: transform 400ms;
   transform: scale(1);
   opacity: 1;
+}
+@media (min-width: 561px) and (max-width: 1024px) {
+  .btn {
+    height: 60px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 1025px) {
+  .btn {
+    height: 60px;
+    font-size: 20px;
+  }
 }
 .btn:hover {
   transform: scale(1.15);

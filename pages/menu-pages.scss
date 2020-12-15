@@ -12,6 +12,7 @@ body{
 
 section{
 display:flex;
+ 
 
   & img{
    position:absolute;
@@ -22,7 +23,6 @@ display:flex;
    z-index:-10;
    }
 
-
   & h1{
   width:100%;
   background-color:$back-clr;
@@ -32,21 +32,40 @@ display:flex;
   padding-left:15px;
   padding-top:30px;
   padding-bottom:20px;
-  font-size:27px;
+  font-size:25px;
   border-radius:35px 35px 0px 0px;
   z-index:1;
-    
+
+  @media (min-width:561px) and (max-width:1024px){
+  padding-left:10%;
+  font-size:35px;
+  }
+
+  @media (min-width:1025px){
+  padding-left:10%;
+  font-size:35px;
+  } 
+
       & i{
       font-size:27px;
       float:right;
       padding-right:20px;
+
+      @media (min-width:561px) and (max-width:1024px){
+      margin-right:10%;
+      }
+
+      @media (min-width:1025px){
+      margin-right:10%;
+      }
+
+  }
       }
 
       & .fa-heart {
       background-color: $back-clr;
       }
-    }
-  }
+}
 
 
 .fa-arrow-left{
@@ -64,14 +83,15 @@ background-color:$back-clr;
 font-family:Roboto;
 
   & h2{
-  position:relative;
-  left:20px;
   width:15%;
+  margin:0px;
   font-weight:normal;
   font-size:18px;
   border-bottom: 3px solid $color-thd;
+  margin-left:20px;
   padding-top:10px;
   padding-bottom:5px;
+  margin-bottom:15px;
   }
 
    & .ape{
@@ -83,18 +103,52 @@ font-family:Roboto;
    border-radius:15px;
    box-shadow:$shadow;
    margin-left:10px;
-  
+
+     @media (min-width:561px) and (max-width:1024px){
+     height:90px;
+     width:80%;
+     margin-left:8%;
+     }
+   
+     @media (min-width:1025px){
+     height:90px;
+     width:79%;
+     margin-left:8%;
+   }
+
    & h4{
    font-weight:bold;
    font-size:15px;
    margin:0px;
    padding-top:10px;
+
+   @media (min-width:561px) and (max-width:1024px){
+   padding-left:3%;
+   padding-top:20px;
+   font-size: 19px;
+   }
+
+   @media (min-width:1025px){
+   padding-left:3%;
+   padding-top:20px;
+   font-size: 19px;
+   }
    }
 
    & span{
-   font-size:14px;
+   font-size:13px;
    position:relative;
    bottom:10px;
+
+   @media (min-width:561px) and (max-width:1024px){
+      padding-left:3%;
+      font-size:16px;
+   }
+
+    @media (min-width:1025px){
+    padding-left:3%;
+    font-size:16px;
+   }
    }
 
    & .price2{
@@ -106,6 +160,16 @@ font-family:Roboto;
    position:relative;
    right:10px;
    bottom:15px;
+
+   @media (min-width:561px) and (max-width:1024px){
+      padding-right:3%;
+      font-size:17px;
+   }
+
+   @media (min-width:1025px){
+   padding-right:3%;
+   font-size:17px;
+   }
    }
    
 
@@ -118,6 +182,16 @@ font-family:Roboto;
    position:relative;
    right:10px;
    bottom:15px;
+
+   @media (min-width:561px) and (max-width:1024px){
+      padding-right:3%;
+      font-size:17px;
+   }
+
+   @media (min-width:1025px){
+   padding-right:3%;
+   font-size:17px;
+   }
    }
    
    & .price{
@@ -129,6 +203,16 @@ font-family:Roboto;
    padding-left:15px;
    position:relative;
    bottom:15px;
+
+   @media (min-width:561px) and (max-width:1024px){
+      padding-right:3%;
+      font-size:17px;
+   }
+
+   @media (min-width:1025px){
+   padding-right:3%;
+   font-size:17px;
+   }
    }
    }
 }
@@ -156,18 +240,54 @@ font-family:Roboto;
    border-radius:15px;
    box-shadow:$shadow;
    margin-left:10px;
+
+   @media (min-width:561px) and (max-width:1024px){
+   height:90px;
+   width:80%;
+   margin-left:8%;
+   }
+
+   @media (min-width:1025px){
+   height:90px;
+   width:79%;
+   margin-left:8%;
+   }
   
   & h4{
    font-weight:bold;
    font-size:15px;
    margin:0px;
    padding-top:10px;
-   }
+
+  @media (min-width:561px) and (max-width:1024px){
+  padding-left:3%;
+  padding-top:20px;
+  font-size: 19px;
+  }
+
+  @media (min-width:1025px){
+  padding-left:3%;
+  padding-top:20px;
+  font-size: 19px;
+  }
+
+  }
 
    & span{
-   font-size:14px;
+   font-size:13px;
    position:relative;
    bottom:15px;
+
+   @media (min-width:561px) and (max-width:1024px){
+   padding-left:3%;
+   font-size:17px;
+   }
+
+   @media (min-width:1025px){
+   padding-left:3%;
+   font-size:17px;
+   }
+
    }
 
    & .price{
@@ -175,10 +295,21 @@ font-family:Roboto;
    font-weight:bold;
    font-size:14px;
    float:right;
-   padding-right:10px;
+   padding-right:25px;
    padding-left:5px;
    position:relative;
-   bottom:25px;
+   bottom:30px;
+
+   @media (min-width:561px) and (max-width:1024px){
+      padding-right:3.5%;
+      font-size:17px;
+   }
+
+   @media (min-width:1025px){
+   padding-right:3.5%;
+   font-size:17px;
+   }
+
    }
    }
 }
@@ -194,18 +325,52 @@ font-family:Roboto;
    border-radius:15px;
    box-shadow:$shadow;
    margin-left:10px;
+
+   @media (min-width:561px) and (max-width:1024px){
+     height:90px;
+     width:80%;
+     margin-left:8%;
+   }
+
+    @media (min-width:1025px){
+   height:90px;
+   width:79%;
+   margin-left:8%;
+   }
   
   & h4{
    font-weight:bold;
    font-size:15px;
    margin:0px;
    padding-top:10px;
+
+   @media (min-width:561px) and (max-width:1024px){
+  padding-left:3%;
+  padding-top:20px;
+  font-size: 19px;
+  }
+
+  @media (min-width:1025px){
+  padding-left:3%;
+  padding-top:20px;
+  font-size: 19px;
+  }
    }
 
    & span{
-   font-size:14px;
+   font-size:13px;
    position:relative;
    bottom:15px;
+
+   @media (min-width:561px) and (max-width:1024px){
+   padding-left:3%;
+   font-size:17px;
+   }
+
+   @media (min-width:1025px){
+   padding-left:3%;
+   font-size:17px;
+   }
    }
 
    & .price{
@@ -213,10 +378,20 @@ font-family:Roboto;
    font-weight:bold;
    font-size:14px;
    float:right;
-   padding-right:10px;
+   padding-right:25px;
    padding-left:5px;
    position:relative;
-   bottom:25px;
+   bottom:30px;
+
+   @media (min-width:561px) and (max-width:1024px){
+      padding-right:3.5%;
+      font-size:17px;
+   }
+
+   @media (min-width:1025px){
+   padding-right:3.5%;
+   font-size:17px;
+   }
    }
    }
 }
