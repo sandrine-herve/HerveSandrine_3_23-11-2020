@@ -13,6 +13,16 @@
 	transition:transform 400ms;
 	transform: scale(1);
 	opacity:1;
+
+	@media (min-width:561px) and (max-width:1024px){
+   height:60px;
+   font-size:20px;
+   }
+
+   @media (min-width:1025px){
+   height:60px;
+   font-size:20px;
+   }
 	
 	&:hover{
 	transform: scale(1.15);
