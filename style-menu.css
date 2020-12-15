@@ -29,16 +29,38 @@ section h1 {
   padding-left: 15px;
   padding-top: 30px;
   padding-bottom: 20px;
-  font-size: 27px;
+  font-size: 25px;
   border-radius: 35px 35px 0px 0px;
   z-index: 1;
+}
+@media (min-width: 561px) and (max-width: 1024px) {
+  section h1 {
+    padding-left: 10%;
+    font-size: 35px;
+  }
+}
+@media (min-width: 1025px) {
+  section h1 {
+    padding-left: 10%;
+    font-size: 35px;
+  }
 }
 section h1 i {
   font-size: 27px;
   float: right;
   padding-right: 20px;
 }
-section h1 .fa-heart {
+@media (min-width: 561px) and (max-width: 1024px) {
+  section h1 i {
+    margin-right: 10%;
+  }
+}
+@media (min-width: 1025px) {
+  section h1 i {
+    margin-right: 10%;
+  }
+}
+section .fa-heart {
   background-color: #f5f5f8;
 }
 
@@ -57,14 +79,15 @@ section h1 .fa-heart {
   font-family: Roboto;
 }
 .menu h2 {
-  position: relative;
-  left: 20px;
   width: 15%;
+  margin: 0px;
   font-weight: normal;
   font-size: 18px;
   border-bottom: 3px solid #99E2D0;
+  margin-left: 20px;
   padding-top: 10px;
   padding-bottom: 5px;
+  margin-bottom: 15px;
 }
 .menu .ape {
   width: 92%;
@@ -76,16 +99,56 @@ section h1 .fa-heart {
   box-shadow: -1px 5px 5px 3px #e8e8e8;
   margin-left: 10px;
 }
+@media (min-width: 561px) and (max-width: 1024px) {
+  .menu .ape {
+    height: 90px;
+    width: 80%;
+    margin-left: 8%;
+  }
+}
+@media (min-width: 1025px) {
+  .menu .ape {
+    height: 90px;
+    width: 79%;
+    margin-left: 8%;
+  }
+}
 .menu .ape h4 {
   font-weight: bold;
   font-size: 15px;
   margin: 0px;
   padding-top: 10px;
 }
+@media (min-width: 561px) and (max-width: 1024px) {
+  .menu .ape h4 {
+    padding-left: 3%;
+    padding-top: 20px;
+    font-size: 19px;
+  }
+}
+@media (min-width: 1025px) {
+  .menu .ape h4 {
+    padding-left: 3%;
+    padding-top: 20px;
+    font-size: 19px;
+  }
+}
 .menu .ape span {
-  font-size: 14px;
+  font-size: 13px;
   position: relative;
   bottom: 10px;
+}
+@media (min-width: 561px) and (max-width: 1024px) {
+  .menu .ape span {
+    padding-left: 3%;
+    font-size: 16px;
+  }
+}
+@media (min-width: 1025px) {
+  .menu .ape span {
+    padding-left: 3%;
+    font-size: 16px;
+  }
 }
 .menu .ape .price2 {
   font-weight: bold;
@@ -97,6 +160,18 @@ section h1 .fa-heart {
   right: 10px;
   bottom: 15px;
 }
+@media (min-width: 561px) and (max-width: 1024px) {
+  .menu .ape .price2 {
+    padding-right: 3%;
+    font-size: 17px;
+  }
+}
+@media (min-width: 1025px) {
+  .menu .ape .price2 {
+    padding-right: 3%;
+    font-size: 17px;
+  }
+}
 .menu .ape .price1 {
   font-weight: bold;
   font-size: 14px;
@@ -107,6 +182,18 @@ section h1 .fa-heart {
   right: 10px;
   bottom: 15px;
 }
+@media (min-width: 561px) and (max-width: 1024px) {
+  .menu .ape .price1 {
+    padding-right: 3%;
+    font-size: 17px;
+  }
+}
+@media (min-width: 1025px) {
+  .menu .ape .price1 {
+    padding-right: 3%;
+    font-size: 17px;
+  }
+}
 .menu .ape .price {
   height: 25px;
   font-weight: bold;
@@ -116,6 +203,18 @@ section h1 .fa-heart {
   padding-left: 15px;
   position: relative;
   bottom: 15px;
+}
+@media (min-width: 561px) and (max-width: 1024px) {
+  .menu .ape .price {
+    padding-right: 3%;
+    font-size: 17px;
+  }
+}
+@media (min-width: 1025px) {
+  .menu .ape .price {
+    padding-right: 3%;
+    font-size: 17px;
+  }
 }
 
 .commander {
@@ -138,26 +237,78 @@ section h1 .fa-heart {
   box-shadow: -1px 5px 5px 3px #e8e8e8;
   margin-left: 10px;
 }
+@media (min-width: 561px) and (max-width: 1024px) {
+  .plat .ape-1 {
+    height: 90px;
+    width: 80%;
+    margin-left: 8%;
+  }
+}
+@media (min-width: 1025px) {
+  .plat .ape-1 {
+    height: 90px;
+    width: 79%;
+    margin-left: 8%;
+  }
+}
 .plat .ape-1 h4 {
   font-weight: bold;
   font-size: 15px;
   margin: 0px;
   padding-top: 10px;
 }
+@media (min-width: 561px) and (max-width: 1024px) {
+  .plat .ape-1 h4 {
+    padding-left: 3%;
+    padding-top: 20px;
+    font-size: 19px;
+  }
+}
+@media (min-width: 1025px) {
+  .plat .ape-1 h4 {
+    padding-left: 3%;
+    padding-top: 20px;
+    font-size: 19px;
+  }
+}
 .plat .ape-1 span {
-  font-size: 14px;
+  font-size: 13px;
   position: relative;
   bottom: 15px;
+}
+@media (min-width: 561px) and (max-width: 1024px) {
+  .plat .ape-1 span {
+    padding-left: 3%;
+    font-size: 17px;
+  }
+}
+@media (min-width: 1025px) {
+  .plat .ape-1 span {
+    padding-left: 3%;
+    font-size: 17px;
+  }
 }
 .plat .ape-1 .price {
   height: 23px;
   font-weight: bold;
   font-size: 14px;
   float: right;
-  padding-right: 10px;
+  padding-right: 25px;
   padding-left: 5px;
   position: relative;
-  bottom: 25px;
+  bottom: 30px;
+}
+@media (min-width: 561px) and (max-width: 1024px) {
+  .plat .ape-1 .price {
+    padding-right: 3.5%;
+    font-size: 17px;
+  }
+}
+@media (min-width: 1025px) {
+  .plat .ape-1 .price {
+    padding-right: 3.5%;
+    font-size: 17px;
+  }
 }
 
 .dessert .ape-1 {
@@ -170,26 +321,78 @@ section h1 .fa-heart {
   box-shadow: -1px 5px 5px 3px #e8e8e8;
   margin-left: 10px;
 }
+@media (min-width: 561px) and (max-width: 1024px) {
+  .dessert .ape-1 {
+    height: 90px;
+    width: 80%;
+    margin-left: 8%;
+  }
+}
+@media (min-width: 1025px) {
+  .dessert .ape-1 {
+    height: 90px;
+    width: 79%;
+    margin-left: 8%;
+  }
+}
 .dessert .ape-1 h4 {
   font-weight: bold;
   font-size: 15px;
   margin: 0px;
   padding-top: 10px;
 }
+@media (min-width: 561px) and (max-width: 1024px) {
+  .dessert .ape-1 h4 {
+    padding-left: 3%;
+    padding-top: 20px;
+    font-size: 19px;
+  }
+}
+@media (min-width: 1025px) {
+  .dessert .ape-1 h4 {
+    padding-left: 3%;
+    padding-top: 20px;
+    font-size: 19px;
+  }
+}
 .dessert .ape-1 span {
-  font-size: 14px;
+  font-size: 13px;
   position: relative;
   bottom: 15px;
+}
+@media (min-width: 561px) and (max-width: 1024px) {
+  .dessert .ape-1 span {
+    padding-left: 3%;
+    font-size: 17px;
+  }
+}
+@media (min-width: 1025px) {
+  .dessert .ape-1 span {
+    padding-left: 3%;
+    font-size: 17px;
+  }
 }
 .dessert .ape-1 .price {
   height: 23px;
   font-weight: bold;
   font-size: 14px;
   float: right;
-  padding-right: 10px;
+  padding-right: 25px;
   padding-left: 5px;
   position: relative;
-  bottom: 25px;
+  bottom: 30px;
+}
+@media (min-width: 561px) and (max-width: 1024px) {
+  .dessert .ape-1 .price {
+    padding-right: 3.5%;
+    font-size: 17px;
+  }
+}
+@media (min-width: 1025px) {
+  .dessert .ape-1 .price {
+    padding-right: 3.5%;
+    font-size: 17px;
+  }
 }
 
 footer {
@@ -201,11 +404,41 @@ footer {
 footer ul {
   padding-left: 20px;
 }
+@media (min-width: 561px) and (max-width: 1024px) {
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 1025px) {
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
 footer img {
   filter: invert(200%);
   padding-bottom: 10px;
   width: 35%;
   font-size: 10px;
+}
+@media (min-width: 561px) and (max-width: 1024px) {
+  footer img {
+    padding-right: 30%;
+    padding-left: 30%;
+    padding-bottom: 20px;
+  }
+}
+@media (min-width: 1025px) {
+  footer img {
+    padding-right: 30%;
+    padding-left: 30%;
+    padding-bottom: 30px;
+  }
 }
 footer li {
   font-family: Roboto;
@@ -227,7 +460,14 @@ header img {
   width: 50%;
   margin-top: 20px;
   margin-bottom: 15px;
-  margin-left: 90px;
+  margin-left: 23%;
+  object-fit: contain;
+}
+@media (min-width: 1025px) {
+  header {
+    width: 90%;
+    margin-left: 15%;
+  }
 }
 
 @font-face {
@@ -266,80 +506,6 @@ section .fa-heart:hover::before {
   cursor: pointer;
 }
 
-.loader {
-  position: absolute;
-  margin: 0;
-  width: 97%;
-  height: 120%;
-  background-color: white;
-  opacity: 1;
-  animation-name: loader2;
-  animation-duration: 10s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes loader2 {
-  0% {
-    opacity: 1;
-    z-index: 1000;
-  }
-  10% {
-    opacity: 1;
-    z-index: 1000;
-  }
-  50% {
-    opacity: 1;
-    z-index: 1000;
-  }
-  80% {
-    opacity: 0.8;
-    z-index: 1000;
-  }
-  90% {
-    opacity: 0.4;
-    z-index: 1000;
-  }
-  100% {
-    opacity: 0;
-    z-index: -1000;
-  }
-}
-.custom-loader {
-  position: absolute;
-  left: 25%;
-  top: 30%;
-  cursor: progress;
-  background: radial-gradient(closest-side, #99E2D0, #9356DC, #fff);
-  border: 10px solid #9356DC;
-  border-top: 10px solid #FF79DA;
-  border-image: linear-gradient(#9356DC, #FF79DA) 30;
-  width: 130px;
-  height: 130px;
-  opacity: 1;
-  animation-name: custom-loader1;
-  animation-duration: 10s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes custom-loader1 {
-  0% {
-    transform: rotate(0deg) scale(1);
-    opacity: 1;
-    background-color: white;
-  }
-  10% {
-    transform: rotate(15deg) scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: rotate(-180deg) scale(1.4);
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: rotate(-360deg) scale(1);
-  }
-}
 .apetizer .ape {
   animation-name: defil;
   animation-duration: 2000ms;
@@ -440,11 +606,34 @@ section .fa-heart:hover::before {
   margin-bottom: 15px;
   padding-top: 10px;
   animation-name: box;
-  animation-duration: 5000ms;
-  animation-delay: 400ms;
+  animation-duration: 1000ms;
+  animation-delay: 100ms;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
   opacity: 0;
+}
+@media (min-width: 415px) and (max-width: 560px) {
+  .ape:hover .box {
+    width: 21%;
+  }
+}
+@media (min-width: 561px) and (max-width: 1024px) {
+  .ape:hover .box {
+    width: 20.5%;
+    height: 80px;
+    margin: 0px;
+    position: relative;
+    bottom: 81px;
+  }
+}
+@media (min-width: 1025px) {
+  .ape:hover .box {
+    width: 20%;
+    height: 80px;
+    margin: 0px;
+    position: relative;
+    bottom: 81px;
+  }
 }
 .ape:hover i {
   position: relative;
@@ -462,6 +651,18 @@ section .fa-heart:hover::before {
   animation-timing-function: linear;
   opacity: 0;
 }
+@media (min-width: 561px) and (max-width: 1024px) {
+  .ape:hover i {
+    margin-left: 10%;
+    margin-top: 6%;
+  }
+}
+@media (min-width: 1025px) {
+  .ape:hover i {
+    margin-left: 9%;
+    margin-top: 3%;
+  }
+}
 .ape:hover .price {
   background-color: white;
   animation-name: price;
@@ -469,6 +670,22 @@ section .fa-heart:hover::before {
   animation-delay: 50ms;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
+}
+@media (min-width: 415px) and (max-width: 560px) {
+  .ape:hover .price {
+    margin-right: 8%;
+  }
+}
+@media (min-width: 561px) and (max-width: 1024px) {
+  .ape:hover .price {
+    margin-right: 9%;
+    padding-right: 50px;
+  }
+}
+@media (min-width: 1025px) {
+  .ape:hover .price {
+    margin-right: 14%;
+  }
 }
 .ape:hover .price .extend {
   color: black;
@@ -480,6 +697,26 @@ section .fa-heart:hover::before {
   animation-fill-mode: forwards;
   animation-timing-function: linear;
   opacity: 0;
+}
+@media (min-width: 415px) and (max-width: 658px) {
+  .ape:hover .price .extend {
+    display: none;
+  }
+}
+@media (min-width: 561px) and (max-width: 615px) {
+  .ape:hover .price .extend {
+    display: flex;
+  }
+}
+@media (min-width: 659px) and (max-width: 1024px) {
+  .ape:hover .price .extend {
+    display: none;
+  }
+}
+@media (min-width: 1025px) {
+  .ape:hover .price .extend {
+    display: none;
+  }
 }
 .ape:hover .price .extend-1 {
   color: black;
@@ -498,10 +735,29 @@ section .fa-heart:hover::before {
   animation-timing-function: linear;
   opacity: 0;
 }
+@media (min-width: 395px) and (max-width: 560px) {
+  .ape:hover .price .extend-1 {
+    display: none;
+  }
+}
+@media (min-width: 659px) and (max-width: 1024px) {
+  .ape:hover .price .extend-1 {
+    display: none;
+  }
+}
+@media (min-width: 415px) and (max-width: 560px) {
+  .ape:hover .price .extend-1 {
+    display: none;
+  }
+}
+@media (min-width: 1025px) {
+  .ape:hover .price .extend-1 {
+    display: none;
+  }
+}
 .ape:hover .price2 {
   height: 25px;
   position: relative;
-  bottom: 35px;
   left: 5px;
   background-color: white;
   animation-name: price;
@@ -509,6 +765,16 @@ section .fa-heart:hover::before {
   animation-delay: 50ms;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
+}
+@media (min-width: 561px) and (max-width: 1024px) {
+  .ape:hover .price2 {
+    margin-right: 11%;
+  }
+}
+@media (min-width: 1025px) {
+  .ape:hover .price2 {
+    margin-right: 14%;
+  }
 }
 .ape:hover .price2 .extend-2 {
   color: black;
@@ -526,6 +792,21 @@ section .fa-heart:hover::before {
   animation-timing-function: linear;
   opacity: 0;
 }
+@media (min-width: 395px) and (max-width: 560px) {
+  .ape:hover .price2 .extend-2 {
+    display: none;
+  }
+}
+@media (min-width: 559px) and (max-width: 1024px) {
+  .ape:hover .price2 .extend-2 {
+    display: none;
+  }
+}
+@media (min-width: 1025px) {
+  .ape:hover .price2 .extend-2 {
+    display: none;
+  }
+}
 .ape:hover .price1 {
   background-color: white;
   animation-name: price;
@@ -533,6 +814,26 @@ section .fa-heart:hover::before {
   animation-delay: 50ms;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
+}
+@media (min-width: 415px) and (max-width: 560px) {
+  .ape:hover .price1 {
+    margin-right: 6.5%;
+  }
+}
+@media (min-width: 561px) and (max-width: 1024px) {
+  .ape:hover .price1 {
+    margin-right: 8%;
+  }
+}
+@media (min-width: 890px) and (max-width: 1024px) {
+  .ape:hover .price1 {
+    width: 8%;
+  }
+}
+@media (min-width: 1025px) {
+  .ape:hover .price1 {
+    margin-right: 14%;
+  }
 }
 
 @keyframes box {
@@ -612,6 +913,29 @@ section .fa-heart:hover::before {
   animation-timing-function: ease-out;
   opacity: 0;
 }
+@media (min-width: 415px) and (max-width: 560px) {
+  .ape-1:hover .box {
+    width: 21%;
+  }
+}
+@media (min-width: 561px) and (max-width: 1024px) {
+  .ape-1:hover .box {
+    width: 21%;
+    height: 80px;
+    margin: 0px;
+    position: relative;
+    bottom: 102px;
+  }
+}
+@media (min-width: 1025px) {
+  .ape-1:hover .box {
+    width: 20%;
+    height: 80px;
+    margin: 0px;
+    position: relative;
+    bottom: 102px;
+  }
+}
 .ape-1:hover i {
   position: relative;
   left: 30%;
@@ -628,6 +952,18 @@ section .fa-heart:hover::before {
   animation-timing-function: linear;
   opacity: 0;
 }
+@media (min-width: 561px) and (max-width: 1024px) {
+  .ape-1:hover i {
+    margin-left: 10%;
+    margin-top: 6%;
+  }
+}
+@media (min-width: 1025px) {
+  .ape-1:hover i {
+    margin-left: 9%;
+    margin-top: 3%;
+  }
+}
 .ape-1:hover .price {
   background-color: white;
   animation-name: price;
@@ -635,6 +971,22 @@ section .fa-heart:hover::before {
   animation-delay: 50ms;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
+}
+@media (min-width: 415px) and (max-width: 560px) {
+  .ape-1:hover .price {
+    margin-right: 8%;
+  }
+}
+@media (min-width: 561px) and (max-width: 1024px) {
+  .ape-1:hover .price {
+    margin-right: 9%;
+    padding-right: 48px;
+  }
+}
+@media (min-width: 1025px) {
+  .ape-1:hover .price {
+    margin-right: 14%;
+  }
 }
 
 .btn {
@@ -652,6 +1004,18 @@ section .fa-heart:hover::before {
   transition: transform 400ms;
   transform: scale(1);
   opacity: 1;
+}
+@media (min-width: 561px) and (max-width: 1024px) {
+  .btn {
+    height: 60px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 1025px) {
+  .btn {
+    height: 60px;
+    font-size: 20px;
+  }
 }
 .btn:hover {
   transform: scale(1.15);
