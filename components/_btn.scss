@@ -1,5 +1,6 @@
 .btn{
 	font-size:15px;
+	font-family:Roboto;
 	padding:15px;
 	margin:20px;
 	border-radius: 25px 25px 25px 25px;
@@ -9,9 +10,16 @@
 	background-image:-moz-linear-gradient(-80deg, $color-scd, $color-prim);
     border:none;
 	color:white;
-	box-shadow: $shadow;
+	-webkit-box-shadow: $shadow;
+	        box-shadow: $shadow;
+	-webkit-transition:-webkit-transform 400ms;
+	transition:-webkit-transform 400ms;
+	-o-transition:transform 400ms;
 	transition:transform 400ms;
-	transform: scale(1);
+	transition:transform 400ms, -webkit-transform 400ms;
+	-webkit-transform: scale(1);
+	    -ms-transform: scale(1);
+	        transform: scale(1);
 	opacity:1;
 
 	@media (min-width:561px) and (max-width:1024px){
@@ -25,9 +33,12 @@
    }
 	
 	&:hover{
-	transform: scale(1.15);
+	-webkit-transform: scale(1.15);
+	    -ms-transform: scale(1.15);
+	        transform: scale(1.15);
     opacity:0.8;
-    box-shadow: -1px 5px 5px 3px #c2c2c2;
+    -webkit-box-shadow: -1px 5px 5px 3px #c2c2c2;
+            box-shadow: -1px 5px 5px 3px #c2c2c2;
 	}
 	}
 	

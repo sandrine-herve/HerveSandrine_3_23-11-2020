@@ -1,417 +1,342 @@
-.ape{
+.container{
 
-& i{
-	color:transparent;
-	background-color:transparent;
-}
+  & .progress{
 
-.extend-2{
-  width:20px;
-  color:transparent;
-  background-color:transparent;
+    & .marge-progress{
+    transform:scaleX(0);
+    transition:transform 400ms;
+    }
+
+    & .fas {
+    display:none;
+    }
   }
 
-& .price{
-  display:inline-block;
+  & .progress-1{
+  display:none;
 
-   & .extend{
-   width:30px;
-   color:transparent;
-   background-color:transparent;
-   height:25px;
-   position:relative;
-   bottom:15px;
-   left:10px;
-   padding-bottom:10px;
-   padding-left:5px;
-   }
-
-   & .extend-1{
-   width:30px;
-   color:transparent;
-   background-color:transparent;
-   height:15px;
-   }
-
-}
-
-&:hover{
-
-  & .box{
-    position:relative; 
-    left:80%;
-    bottom:66px;
-    height:55px;
-    width:20%;
-    background-color:$color-thd;
-    border-radius: 0px 15px  15px 0px;
-    margin-right:0px;
-    margin-bottom:15px;
-    padding-top:10px;
-    animation-name:box;
-	  animation-duration:1000ms;
-	  animation-delay:100ms;
-	  animation-fill-mode: forwards;
-	  animation-timing-function: linear;
-    opacity:0;
-
-    @media (min-width:415px) and (max-width:560px){
-    width:21%;
+    & .marge-progress{
+    transform:scaleX(0);
+    transition:transform 400ms;
     }
 
-    @media (min-width:561px) and (max-width:1024px){
-    width:20.5%;
-    height:80px;
-    margin:0px;
-    position:relative;
-    bottom:81px;
+    & .fas {
+    display:none;
     }
 
-    @media (min-width:1025px){
-    width:20%;
-    height:80px;
-    margin:0px;
-    position:relative;
-    bottom:81px;
+    & .extent{
+    display:none;
     }
+  }
 
-    }
+  &:hover{
   
-  & i{
+  & .price{
+  background-color:white;
+  -webkit-animation-name:price;
+  animation-name:price;
+  -webkit-animation-duration:200ms;
+  animation-duration:200ms;
+  -webkit-animation-delay:30ms;
+  animation-delay:30ms;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+
+  @media (min-width:400px) and (max-width:560px){
+  position:relative;
+  right:10%;
+  }
+  }
+
+  & .extent{
+  display:flex;
+  background-color:white;
+  -webkit-animation-name:price;
+  animation-name:extent;
+  -webkit-animation-duration:300ms;
+  animation-duration:300ms;
+  -webkit-animation-delay:60ms;
+  animation-delay:60ms;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+
+  @media (min-width:396px) and (max-width:560px){
+  display:none;
+  }
+  }
+
+  & .progress{
+  display:flex;
+
+    & .marge-progress{
+    width:25%;
+    height:71px;
     position:relative;
-    left:30%;
-    top:20%;
+    left:75%;
+    bottom:57px;
+    border-radius: 0px 15px 15px 0px;
+    transform-origin:right;
+    background-color:$color-thd;
+    transform:scaleX(1);
+    }
+
+    & .fas{
+    display:flex;
+    position:relative;
+    bottom:35px;
+    left:58%;
+    height:12px;
     font-size:12px;
     color:$color-thd;
     background-color:white;
     padding:5px;
     border-radius:50%;
     animation-name:icone;
-	  animation-duration:700ms;
-	  animation-delay:200ms;
-	  animation-fill-mode: forwards;
-	  animation-timing-function: linear;
+    animation-duration:500ms;
+    animation-delay:100ms;
+    animation-fill-mode: forwards;
     opacity:0;
-
-    @media (min-width:561px) and (max-width:1024px){
-    margin-left:10%;
-    margin-top:6%;
     }
+  }
 
-    @media (min-width:1025px){
-    margin-left:9%;
-    margin-top:3%;
-    }
-    }
+  & .progress-1{
+  display:flex;
 
-    & .price{
-    background-color:white;
-    animation-name:price;
-	  animation-duration:500ms;
-	  animation-delay:50ms;
-	  animation-fill-mode: forwards;
-	  animation-timing-function: linear;
-
-    @media (min-width:415px) and (max-width:560px){
-    margin-right:8%;
-    }
-
-    @media (min-width:561px) and (max-width:1024px){
-    margin-right:9%;
-    padding-right:50px;
-    }
-
-    @media (min-width:1025px){
-    margin-right:14%;
-    }
-
-      & .extend{
-      color:black;
-      background-color:white;
-      padding-bottom:2px;
-      animation-name:extend;
-      animation-duration:470ms;
-      animation-delay:50ms;
-      animation-fill-mode: forwards;
-      animation-timing-function: linear;
-      opacity:0;
-
-
-      @media (min-width:415px) and (max-width:658px){
-      display:none;
-      }
-
-      @media (min-width:561px) and (max-width:615px){
-      display:flex;
-      }
-
-      @media (min-width:659px) and (max-width:1024px){
-      display:none;
-      }
-
-      @media (min-width:1025px){
-      display:none;
-      }
-      }
-
-      & .extend-1{
-      color:black;
-      background-color:white;
-      width:20px;
-      position:relative;
-      bottom:43px;
-      left:72px;
-      padding-bottom:12px;
-      padding-left:15px;
-      padding-right:20px;
-      animation-name:extend;
-      animation-duration:370ms;
-      animation-delay:50ms;
-      animation-fill-mode: forwards;
-      animation-timing-function: linear;
-      opacity:0;
-
-      @media (min-width:395px) and (max-width:560px){
-      display:none;
-      }
-
-       @media (min-width:659px) and (max-width:1024px){
-      display:none;
-      }
-
-      @media (min-width:415px) and (max-width:560px){
-      display:none;
-      }
-
-      @media (min-width:1025px){
-      display:none;
-      }
-      }
-    }
-
-    & .price2{
-    height:25px;
+    & .marge-progress{
+    width:25%;
+    height:76px;
     position:relative;
-    left:5px;
+    left:90%;
+    bottom:98px;
+    border-radius: 0px 15px 15px 0px;
+    transform-origin:right;
+    background-color:$color-thd;
+    transform:scaleX(1);
+    }
+
+    & .fas{
+    display:flex;
+    position:relative;
+    bottom:70px;
+    left:70%;
+    height:12px;
+    font-size:12px;
+    color:$color-thd;
     background-color:white;
-    animation-name:price;
+    padding:5px;
+    border-radius:50%;
+    animation-name:icone;
     animation-duration:500ms;
-    animation-delay:50ms;
+    animation-delay:100ms;
     animation-fill-mode: forwards;
-    animation-timing-function: linear;
-
-    @media (min-width:561px) and (max-width:1024px){
-    margin-right:11%;
+    opacity:0;
     }
+  }
 
-    @media (min-width:415px) and (max-width:560px){
-    
-    }
-
-    @media (min-width:1025px){
-    margin-right:14%;
-    }
-
-
-      & .extend-2{
-      color:black;
-      background-color:white;
-      width:20px;
-      position:relative;
-      left:10px;
-      bottom:15px;
-      padding-bottom:12px;
-      padding-left:15px;
-      animation-name:extend;
-      animation-duration:370ms;
-      animation-delay:50ms;
-      animation-fill-mode: forwards;
-      animation-timing-function: linear;
-      opacity:0;
-
-
-      @media (min-width:395px) and (max-width:560px){
-      display:none;
-      }
-
-      @media (min-width:559px) and (max-width:1024px){
-      display:none;
-      }
-
-      @media (min-width:1025px){
-      display:none;
-      }
-      }
-    }
-
-
-    & .price1{
-    background-color:white;
-    animation-name:price;
-    animation-duration:500ms;
-    animation-delay:50ms;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
-
-    @media (min-width:415px) and (max-width:560px){
-    margin-right:6.5%;
-    }
-
-    @media (min-width:561px) and (max-width:1024px){
-    margin-right:8%;
-    }
-
-    @media (min-width:890px) and (max-width:1024px){
-    width:8%;
-    }
-
-    @media (min-width:1025px){
-    margin-right:14%;
-    }
-
-    }
+  }
 }
-}
-
-@keyframes box{
-
-0%{
-  opacity:0;
-  transform:translate(0px,0px);
-}
-
-10%{
-  opacity:1;
-}
-
-10%{
-}
-
-20%{
-  opacity:1;
-}
-
-50%{
-  opacity:1;
-}
-
-100%{
-  opacity:1;
-  transform:translate(0px,0px);
-}
-
-}
-
 
 @keyframes icone{
 
 0%{
-   opacity:0;
-   transform:rotate(-360deg);
-   }
-
-50%{
-	opacity:1;
-}   
+opacity:0;
+transform: translateX(40px) rotate(-360deg);
+  }
 
 100%{
-    
-    opacity:1;
+transform: translateX(0px);
+opacity:1;
 }
 }
-
 
 @keyframes price{
 
 0%{
-
-	transform:translate(0px,0px);
+-webkit-transform:translate(0px,0px);
+-ms-transform:translate(0px,0px);
+transform:translate(0px,0px);
 }
-
 100%{
-	
-	transform:translate(-60px,0px);
+-webkit-transform:translate(-60px,0px);
+-ms-transform:translate(-60px,0px);
+transform:translate(-60px,0px);
+}
 }
 
-}
-
-
-@keyframes extend{
+@keyframes extent{
 
 0%{
-  opacity:0;
-  transform:translate(0px,0px);
+opacity:0;
+-webkit-transform:translate(0px,0px);
+-ms-transform:translate(0px,0px);
+transform:translate(0px,0px);
 }
-
 70%{
-  opacity:0;
+opacity:0;
 }
-
 100%{
+opacity:1;
+-webkit-transform:translate(-60px,0px);
+-ms-transform:translate(-60px,0px);
+transform:translate(-60px,0px);
+}
+}
+
+/*container plus haut*/
+
+.container-1{
+
+  & .progress{
+
+    & .marge-progress{
+    transform:scaleX(0);
+    transition:transform 400ms;
+    }
+
+    & .fas {
+    display:none;
+    }
+  }
+
+  & .progress-1{
+
+    & .marge-progress{
+    transform:scaleX(0);
+    transition:transform 400ms;
+    }
+
+    & .fas {
+    display:none;
+    }
+  }
+
+  & .progress-2{
+
+    & .marge-progress{
+    transform:scaleX(0);
+    transition:transform 400ms;
+    }
+
+    & .fas {
+    display:none;
+    }
+  }
+
+  &:hover{
   
-  opacity:1;
-  transform:translate(-60px,0px);
-}
-}
+  & .price{
+  background-color:white;
+  -webkit-animation-name:price;
+  animation-name:price;
+  -webkit-animation-duration:200ms;
+  animation-duration:200ms;
+  -webkit-animation-delay:30ms;
+  animation-delay:30ms;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  padding-right:10%;
 
+  @media (min-width:400px) and (max-width:560px){
+  position:relative;
+  right:10%;
+  }
+  }
 
-.ape-1{
+  & .extent{
+  display:flex;
+  background-color:white;
+  -webkit-animation-name:price;
+  animation-name:extent;
+  -webkit-animation-duration:300ms;
+  animation-duration:300ms;
+  -webkit-animation-delay:60ms;
+  animation-delay:60ms;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  }
 
-& i{
-  color:transparent;
-  background-color:transparent;
-}
+  & .progress{
+  display:flex;
 
-& .price{
-  display:inline-block;
-}
-
-&:hover{
-
-  & .box{
-    position:relative; 
-    left:80%;
-    bottom:85px;
-    height:65px;
-    width:20%;
+    & .marge-progress{
+    width:32%;
+    height:76px;
+    position:relative;
+    left:94%;
+    bottom:90px;
+    border-radius: 0px 15px 15px 0px;
+    transform-origin:right;
     background-color:$color-thd;
-    border-radius: 0px 15px  15px 0px;
-    margin-right:0px;
-    margin-bottom:15px;
-    padding-top:10px;
-    animation-name:box;
-    animation-duration:700ms;
-    animation-delay:50ms;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-    opacity:0;
+    transform:scaleX(1);
 
-    @media (min-width:415px) and (max-width:560px){
-    width:21%;
-    }
-
-    @media (min-width:561px) and (max-width:1024px){
-    width:21%;
-    height:80px;
-    margin:0px;
+    @media (min-width:331px) and (max-width:357px){
+    width:33%;
     position:relative;
-    bottom:102px;
+    left:92%;
     }
 
-    @media (min-width:1025px){
-    width:20%;
-    height:80px;
-    margin:0px;
+    @media (min-width:358px) and (max-width:378px){
     position:relative;
-    bottom:102px;
+    left:93%;
     }
 
-    }
-  
-  & i{
+    @media (min-width:379px) and (max-width:400px){
+    width:32%;
     position:relative;
-    left:30%;
-    top:20%;
+    left:91.5%;
+    }
+
+    @media (min-width:401px) and (max-width:420px){
+    width:31%;
+    position:relative;
+    left:91.5%;
+    }
+
+    @media (min-width:421px) and (max-width:431px){
+    width:31%;
+    position:relative;
+    left:92%;
+    }
+
+    @media (min-width:432px) and (max-width:444px){
+    width:30%;
+    position:relative;
+    left:91.5%;
+    }
+
+    @media (min-width:445px) and (max-width:480px){
+    width:30%;
+    position:relative;
+    left:91%;
+    }
+
+    @media (min-width:481px) and (max-width:510px){
+    width:30%;
+    position:relative;
+    left:90.5%;
+    }
+
+    @media (min-width:511px) and (max-width:560px){
+    width:30%;
+    position:relative;
+    left:90.5%;
+    }
+    }
+
+    & .fas{
+    display:flex;
+    position:relative;
+    bottom:65px;
+    left:73%;
+    height:12px;
     font-size:12px;
     color:$color-thd;
     background-color:white;
@@ -419,43 +344,262 @@
     border-radius:50%;
     animation-name:icone;
     animation-duration:500ms;
-    animation-delay:200ms;
+    animation-delay:100ms;
     animation-fill-mode: forwards;
-    animation-timing-function: linear;
     opacity:0;
 
-    @media (min-width:561px) and (max-width:1024px){
-    margin-left:10%;
-    margin-top:6%;
+    @media (min-width:330px) and (max-width:378px){
+    position:relative;
+    left:71%;
     }
 
-    @media (min-width:1025px){
-    margin-left:9%;
-    margin-top:3%;
-    }
-    }
-
-    & .price{
-    background-color:white;
-    animation-name:price;
-    animation-duration:500ms;
-    animation-delay:50ms;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
-
-     @media (min-width:415px) and (max-width:560px){
-    margin-right:8%;
+    @media (min-width:379px) and (max-width:400px){
+    position:relative;
+    left:70%;
     }
 
-    @media (min-width:561px) and (max-width:1024px){
-    margin-right:9%;
-    padding-right:48px;
+    @media (min-width:401px) and (max-width:420px){
+    position:relative;
+    left:70%;
     }
 
-    @media (min-width:1025px){
-    margin-right:14%;
+    @media (min-width:421px) and (max-width:431px){
+    position:relative;
+    left:72%;
     }
 
+    @media (min-width:432px) and (max-width:560px){
+    position:relative;
+    left:70%;
+    }
     }
   }
+
+/*quand on a un container plus haut la marge n'est pas adapté, alors j'ai fait une marge adapté avec le titre*/
+
+  & .progress-1{
+  display:flex;
+
+    & .marge-progress{
+    width:32%;
+    height:76px;
+    position:relative;
+    left:94%;
+    bottom:94px;
+    border-radius: 0px 15px 15px 0px;
+    transform-origin:right;
+    background-color:$color-thd;
+    transform:scaleX(1);
+  
+    @media (min-width:344px) and (max-width:360px){
+    position:relative;
+    left:92.5%;
+    bottom:76px;
+    }
+
+    @media (min-width:361px) and (max-width:380px){
+    position:relative;
+    left:92%;
+    bottom:76px;
+    }
+
+    @media (min-width:381px) and (max-width:408px){
+    position:relative;
+    left:91.5%;
+    bottom:76px;
+    }
+
+    @media (min-width:409px) and (max-width:445px){
+    position:relative;
+    left:90%;
+    bottom:76px;
+    }
+
+    @media (min-width:446px) and (max-width:485px){
+    position:relative;
+    left:89%;
+    bottom:76px;
+    }
+
+    @media (min-width:486px) and (max-width:560px){
+    position:relative;
+    left:88.5%;
+    bottom:76px;
+    }
+
+    }
+
+    & .fas{
+    display:flex;
+    position:relative;
+    bottom:70px;
+    left:72%;
+    height:12px;
+    font-size:12px;
+    color:$color-thd;
+    background-color:white;
+    padding:5px;
+    border-radius:50%;
+    animation-name:icone;
+    animation-duration:500ms;
+    animation-delay:100ms;
+    animation-fill-mode: forwards;
+    opacity:0;
+
+    @media (min-width:344px) and (max-width:560px){
+    position:relative;
+    bottom:50px;
+    }
+
+    @media (min-width:360px) and (max-width:400px){
+    position:relative;
+    left:70%;
+    }
+
+    @media (min-width:401px) and (max-width:439px){
+    position:relative;
+    left:69%;
+    }
+
+    @media (min-width:440px) and (max-width:480px){
+    position:relative;
+    left:68%;
+    }
+
+    @media (min-width:481px) and (max-width:560px){
+    position:relative;
+    left:67%;
+    }
+    }
+  }
+
+/*quand on a un container plus haut la marge n'est pas adapté, alors j'ai fait une marge adapté avec le paragraphe*/
+
+  & .progress-2{
+  display:flex;
+
+    & .marge-progress{
+    width:34%;
+    height:76px;
+    position:relative;
+    left:99%;
+    bottom:90px;
+    border-radius: 0px 15px 15px 0px;
+    transform-origin:right;
+    background-color:$color-thd;
+    transform:scaleX(1);
+    }
+
+    & .fas{
+    display:flex;
+    position:relative;
+    bottom:65px;
+    left:77%;
+    height:12px;
+    font-size:12px;
+    color:$color-thd;
+    background-color:white;
+    padding:5px;
+    border-radius:50%;
+    animation-name:icone;
+    animation-duration:500ms;
+    animation-delay:100ms;
+    animation-fill-mode: forwards;
+    opacity:0;
+    }
+  }
+  }
+}
+
+/* problème sur un plat, la marge etait trop a droite, aucune raison trouvée*/
+.container-2{
+
+  & .progress{
+
+    & .marge-progress{
+    transform:scaleX(0);
+    transition:transform 400ms;
+    }
+
+    & .fas {
+    display:none;
+    }
+  }
+
+   &:hover{
+  
+  & .price{
+  background-color:white;
+  -webkit-animation-name:price;
+  animation-name:price;
+  -webkit-animation-duration:200ms;
+  animation-duration:200ms;
+  -webkit-animation-delay:30ms;
+  animation-delay:30ms;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  padding-right:10%;
+
+  @media (min-width:400px) and (max-width:560px){
+  position:relative;
+  right:10%;
+  }
+  }
+
+  & .extent{
+  display:flex;
+  background-color:white;
+  -webkit-animation-name:price;
+  animation-name:extent;
+  -webkit-animation-duration:300ms;
+  animation-duration:300ms;
+  -webkit-animation-delay:60ms;
+  animation-delay:60ms;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+
+  @media (min-width:385px) and (max-width:560px){
+  display:none;
+  }
+  }
+
+  & .progress{
+  display:flex;
+
+    & .marge-progress{
+    width:25%;
+    height:70px;
+    position:relative;
+    left:75%;
+    bottom:56px;
+    border-radius: 0px 15px 15px 0px;
+    transform-origin:right;
+    background-color:$color-thd;
+    transform:scaleX(1);
+    }
+
+    & .fas{
+    display:flex;
+    position:relative;
+    bottom:32px;
+    left:58%;
+    height:12px;
+    font-size:12px;
+    color:$color-thd;
+    background-color:white;
+    padding:5px;
+    border-radius:50%;
+    animation-name:icone;
+    animation-duration:500ms;
+    animation-delay:100ms;
+    animation-fill-mode: forwards;
+    opacity:0;
+    }
+  }
+  }
+
 }
