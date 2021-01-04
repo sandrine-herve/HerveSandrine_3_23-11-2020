@@ -1,27 +1,33 @@
 body{
-  margin:0px;
+margin:0px;
+}
 
-  & a{
-  color:black;
-  
-  & :hover{
-  color:$color-scd;
-  }
-  }
+header{
+
+.fas{
+font-size:20px;
+color:black;
+position:relative;
+left:20px;
+bottom:20px;
+}
+
+.fas:hover{
+color:$color-scd;
+}
 }
 
 section{
 display:flex;
- 
 
   & img{
-   position:absolute;
+  position:absolute;
    width:100%;
    height:230px;
    margin:0;
    object-fit:cover;
    z-index:-10;
-   }
+  }
 
   & h1{
   width:100%;
@@ -38,42 +44,28 @@ display:flex;
 
   @media (min-width:561px) and (max-width:1024px){
   padding-left:10%;
-  font-size:35px;
   }
 
   @media (min-width:1025px){
-  padding-left:10%;
-  font-size:35px;
-  } 
-
-      & i{
-      font-size:27px;
-      float:right;
-      padding-right:20px;
-
-      @media (min-width:561px) and (max-width:1024px){
-      margin-right:10%;
-      }
-
-      @media (min-width:1025px){
-      margin-right:10%;
-      }
-
+  padding-left:15%;
   }
-      }
+  }
 
-      & .fa-heart {
-      background-color: $back-clr;
-      }
+  & .fa-heart {
+  background-color: $back-clr;
+  font-size:27px;
+  float:right;
+  padding-right:20px;
+
+  @media (min-width:561px) and (max-width:1024px){
+  margin-right:10%;
+  }
+
+  @media (min-width:1025px){
+  margin-right:15%;
+  }
+  }
 }
-
-
-.fa-arrow-left{
-   position: relative;
-   bottom:40px;
-   font-size:18px;
-   padding-left:20px;
-   }
 
 .menu{
 display:flex;
@@ -94,129 +86,235 @@ font-family:Roboto;
   margin-bottom:15px;
   }
 
-   & .ape{
-   width:92%;
-   height:65px;
-   background-color:white;
-   margin-bottom:15px;
-   padding-left:10px;
-   border-radius:15px;
-   box-shadow:$shadow;
-   margin-left:10px;
+  & .container{
+  margin-left:20px;
+  background-color:white;
+  border-radius:15px;
+  box-shadow:$shadow;
+  width:92%;
+  height:70px;
+  margin-bottom:18px;
+  font-size:15px;
 
-     @media (min-width:561px) and (max-width:1024px){
-     height:90px;
-     width:80%;
-     margin-left:8%;
-     }
-   
-     @media (min-width:1025px){
-     height:90px;
-     width:79%;
-     margin-left:8%;
-   }
+  @media (min-width:561px) and (max-width:1024px){
+  width:70%;
+  height:80px;
+  margin-left:15%;
+  }
 
-   & h4{
-   font-weight:bold;
-   font-size:15px;
-   margin:0px;
-   padding-top:10px;
+  @media (min-width:1025px){
+  width:70%;
+  height:90px;
+  margin-left:15%;
+  }
 
-   @media (min-width:561px) and (max-width:1024px){
-   padding-left:3%;
-   padding-top:20px;
-   font-size: 19px;
-   }
+    & h4{
+    width:70%;
+    margin:0px;
+    margin-left:10px;
+    padding-top:5px;
 
-   @media (min-width:1025px){
-   padding-left:3%;
-   padding-top:20px;
-   font-size: 19px;
-   }
-   }
-
-   & span{
-   font-size:13px;
-   position:relative;
-   bottom:10px;
-
-   @media (min-width:561px) and (max-width:1024px){
-      padding-left:3%;
-      font-size:16px;
-   }
+    @media (min-width:561px) and (max-width:1024px){
+    margin-left:10%;
+    font-size:17px;
+    padding-top:10px;
+    }
 
     @media (min-width:1025px){
-    padding-left:3%;
-    font-size:16px;
-   }
-   }
+    margin-left:10%;
+    font-size:18px;
+    padding-top:10px;
+    }
+    }
 
-   & .price2{
-   font-weight:bold;
-   font-size:14px;
-   float:right;
-   padding-right:10px;
-   padding-left:15px;
-   position:relative;
-   right:10px;
-   bottom:15px;
+    & span{
+    font-size:12px;
+    position:relative;
+    bottom:10px;
+    margin-left:10px;
 
-   @media (min-width:561px) and (max-width:1024px){
-      padding-right:3%;
-      font-size:17px;
-   }
+    @media (min-width:561px) and (max-width:1024px){
+    margin-left:10%;
+    font-size:17px;  
+    }
 
-   @media (min-width:1025px){
-   padding-right:3%;
-   font-size:17px;
-   }
-   }
-   
+    @media (min-width:1025px){
+    margin-left:10%;
+    font-size:18px;
+    }
+    }
 
-   & .price1{
-   font-weight:bold;
-   font-size:14px;
-   float:right;
-   padding-right:10px;
-   padding-left:15px;
-   position:relative;
-   right:10px;
-   bottom:15px;
+    & .price{
+    font-weight:bold;
+    float:right;
+    position:relative;
+    bottom:10px;
+    padding-right:13%;
+    padding-left:5px;
+    }
 
-   @media (min-width:561px) and (max-width:1024px){
-      padding-right:3%;
-      font-size:17px;
-   }
+    & .extent{
+    display:none;
+    float:right;
+    position:relative;
+    bottom:10px;
+    }
 
-   @media (min-width:1025px){
-   padding-right:3%;
-   font-size:17px;
-   }
-   }
-   
-   & .price{
-   height:25px;
-   font-weight:bold;
-   font-size:14px;
-   float:right;
-   padding-right:10px;
-   padding-left:15px;
-   position:relative;
-   bottom:15px;
 
-   @media (min-width:561px) and (max-width:1024px){
-      padding-right:3%;
-      font-size:17px;
-   }
+  }
 
-   @media (min-width:1025px){
-   padding-right:3%;
-   font-size:17px;
-   }
-   }
-   }
+  & .container-1{
+  margin-left:20px;
+  background-color:white;
+  border-radius:15px;
+  box-shadow:$shadow;
+  width:92%;
+  height:75px;
+  margin-bottom:18px;
+  font-size:15px;
+
+
+  @media (min-width:561px) and (max-width:1024px){
+  width:70%;
+  height:80px;
+  margin-left:15%;
+  }
+
+  @media (min-width:1025px){
+  width:70%;
+  height:80px;
+  margin-left:15%;
+  }
+
+    & h4{
+    width:70%;
+    margin:0px;
+    margin-left:10px;
+    padding-top:5px;
+
+    @media (min-width:561px) and (max-width:1024px){
+    margin-left:10%;
+    font-size:17px;
+    }
+
+    @media (min-width:1025px){
+    margin-left:10%;
+    font-size:17px;
+    }
+    }
+
+    & p{
+    font-size:12px;
+    position:relative;
+    bottom:20px;
+    margin-left:10px;
+
+    @media (min-width:561px) and (max-width:1024px){
+    margin-left:10%;
+    font-size:17px;
+    }
+
+    @media (min-width:1025px){
+    margin-left:10%;
+    font-size:17px;
+    }
+    }
+
+    & .price{
+    font-weight:bold;
+    float:right;
+    position:relative;
+    bottom:60px;
+    padding-right:13%;
+    padding-left:5px;
+    }
+
+    & .extent{
+    display:none;
+    float:right;
+    position:relative;
+    bottom:64px;
+    }
+  }
+
+  & .container-2{
+  margin-left:20px;
+  background-color:white;
+  border-radius:15px;
+  box-shadow:$shadow;
+  width:92%;
+  height:70px;
+  margin-bottom:18px;
+  font-size:15px;
+
+  @media (min-width:561px) and (max-width:1024px){
+  width:70%;
+  height:80px;
+  margin-left:15%;
+  }
+
+  @media (min-width:1025px){
+  width:70%;
+  height:90px;
+  margin-left:15%;
+  }
+
+    & h4{
+    width:70%;
+    margin:0px;
+    margin-left:10px;
+    padding-top:5px;
+
+    @media (min-width:561px) and (max-width:1024px){
+    margin-left:10%;
+    font-size:17px;
+    padding-top:10px;
+    }
+
+    @media (min-width:1025px){
+    margin-left:10%;
+    font-size:18px;
+    padding-top:10px;
+    }
+    }
+
+    & span{
+    font-size:12px;
+    position:relative;
+    bottom:10px;
+    margin-left:10px;
+
+    @media (min-width:561px) and (max-width:1024px){
+    margin-left:10%;
+    font-size:17px;  
+    }
+
+    @media (min-width:1025px){
+    margin-left:10%;
+    font-size:18px;
+    }
+    }
+
+    & .price{
+    font-weight:bold;
+    float:right;
+    position:relative;
+    bottom:10px;
+    padding-right:13%;
+    padding-left:5px;
+    }
+
+    & .extent{
+    display:none;
+    float:right;
+    position:relative;
+    bottom:10px;
+    }
+
+
+  }
+
 }
-
 
 .commander{
   text-align:center;
@@ -227,171 +325,4 @@ font-family:Roboto;
   & .btn{
   width:50%;
   }
-}
-
-.plat{
-
-  & .ape-1{
-   width:92%;
-   height:75px;
-   background-color:white;
-   margin-bottom:15px;
-   padding-left:10px;
-   border-radius:15px;
-   box-shadow:$shadow;
-   margin-left:10px;
-
-   @media (min-width:561px) and (max-width:1024px){
-   height:90px;
-   width:80%;
-   margin-left:8%;
-   }
-
-   @media (min-width:1025px){
-   height:90px;
-   width:79%;
-   margin-left:8%;
-   }
-  
-  & h4{
-   font-weight:bold;
-   font-size:15px;
-   margin:0px;
-   padding-top:10px;
-
-  @media (min-width:561px) and (max-width:1024px){
-  padding-left:3%;
-  padding-top:20px;
-  font-size: 19px;
-  }
-
-  @media (min-width:1025px){
-  padding-left:3%;
-  padding-top:20px;
-  font-size: 19px;
-  }
-
-  }
-
-   & span{
-   font-size:13px;
-   position:relative;
-   bottom:15px;
-
-   @media (min-width:561px) and (max-width:1024px){
-   padding-left:3%;
-   font-size:17px;
-   }
-
-   @media (min-width:1025px){
-   padding-left:3%;
-   font-size:17px;
-   }
-
-   }
-
-   & .price{
-   height:23px;
-   font-weight:bold;
-   font-size:14px;
-   float:right;
-   padding-right:25px;
-   padding-left:5px;
-   position:relative;
-   bottom:30px;
-
-   @media (min-width:561px) and (max-width:1024px){
-      padding-right:3.5%;
-      font-size:17px;
-   }
-
-   @media (min-width:1025px){
-   padding-right:3.5%;
-   font-size:17px;
-   }
-
-   }
-   }
-}
-
-.dessert{
-
-  & .ape-1{
-   width:92%;
-   height:75px;
-   background-color:white;
-   margin-bottom:15px;
-   padding-left:10px;
-   border-radius:15px;
-   box-shadow:$shadow;
-   margin-left:10px;
-
-   @media (min-width:561px) and (max-width:1024px){
-     height:90px;
-     width:80%;
-     margin-left:8%;
-   }
-
-    @media (min-width:1025px){
-   height:90px;
-   width:79%;
-   margin-left:8%;
-   }
-  
-  & h4{
-   font-weight:bold;
-   font-size:15px;
-   margin:0px;
-   padding-top:10px;
-
-   @media (min-width:561px) and (max-width:1024px){
-  padding-left:3%;
-  padding-top:20px;
-  font-size: 19px;
-  }
-
-  @media (min-width:1025px){
-  padding-left:3%;
-  padding-top:20px;
-  font-size: 19px;
-  }
-   }
-
-   & span{
-   font-size:13px;
-   position:relative;
-   bottom:15px;
-
-   @media (min-width:561px) and (max-width:1024px){
-   padding-left:3%;
-   font-size:17px;
-   }
-
-   @media (min-width:1025px){
-   padding-left:3%;
-   font-size:17px;
-   }
-   }
-
-   & .price{
-   height:23px;
-   font-weight:bold;
-   font-size:14px;
-   float:right;
-   padding-right:25px;
-   padding-left:5px;
-   position:relative;
-   bottom:30px;
-
-   @media (min-width:561px) and (max-width:1024px){
-      padding-right:3.5%;
-      font-size:17px;
-   }
-
-   @media (min-width:1025px){
-   padding-right:3.5%;
-   font-size:17px;
-   }
-   }
-   }
 }
