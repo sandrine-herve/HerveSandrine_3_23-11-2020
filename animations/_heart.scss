@@ -13,10 +13,14 @@ i{
 .fa-heart::before {
     content: "\f004";
     font-weight: normal;
+    -webkit-transition: color 1s ease-out;
+    -o-transition: color 1s ease-out;
     transition: color 1s ease-out;
 }
 .fa-heart:hover::before{
     font-weight:bold;
+     background: -webkit-gradient(linear, left bottom, left top, from($color-scd), to($color-prim));
+    background: -o-linear-gradient(bottom, $color-scd, $color-prim);
     background: linear-gradient(to top, $color-scd, $color-prim);
     background-clip: text;
     -webkit-background-clip: text;

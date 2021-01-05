@@ -1,58 +1,155 @@
 .apetizer{
-    .ape{
-	animation-name:defil;
-	animation-duration:2000ms;
-	animation-delay:100ms;
-	animation-fill-mode: forwards;
-	animation-timing-function: linear;
+    .container{
+	-webkit-animation-name:defil;
+	        animation-name:defil;
+	-webkit-animation-duration:2000ms;
+	        animation-duration:2000ms;
+	-webkit-animation-delay:100ms;
+	        animation-delay:100ms;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear;
+	opacity:0;
+	}
+
+	.container-1{
+	-webkit-animation-name:defil;
+	        animation-name:defil;
+	-webkit-animation-duration:2000ms;
+	        animation-duration:2000ms;
+	-webkit-animation-delay:100ms;
+	        animation-delay:100ms;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear;
+	opacity:0;
+	}
+
+	.container-2{
+	-webkit-animation-name:defil;
+	        animation-name:defil;
+	-webkit-animation-duration:2000ms;
+	        animation-duration:2000ms;
+	-webkit-animation-delay:100ms;
+	        animation-delay:100ms;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear;
 	opacity:0;
 	}
 }
 
 .plat{
-	.ape{
-	animation-name:defil;
-	animation-duration:2000ms;
-	animation-delay:2100ms;
-	animation-fill-mode: forwards;
-	animation-timing-function: linear;
+	.container{
+	-webkit-animation-name:defil;
+	        animation-name:defil;
+	-webkit-animation-duration:2000ms;
+	        animation-duration:2000ms;
+	-webkit-animation-delay:2100ms;
+	        animation-delay:2100ms;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear;
 	opacity:0;
 	}
 
-	.ape-1{
-	animation-name:defil;
-	animation-duration:2000ms;
-	animation-delay:2100ms;
-	animation-fill-mode: forwards;
-	animation-timing-function: linear;
+	.container-1{
+	-webkit-animation-name:defil;
+	        animation-name:defil;
+	-webkit-animation-duration:2000ms;
+	        animation-duration:2000ms;
+	-webkit-animation-delay:2100ms;
+	        animation-delay:2100ms;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear;
+	opacity:0;
+	}
+
+	.container-2{
+	-webkit-animation-name:defil;
+	        animation-name:defil;
+	-webkit-animation-duration:2000ms;
+	        animation-duration:2000ms;
+	-webkit-animation-delay:2100ms;
+	        animation-delay:2100ms;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear;
 	opacity:0;
 	}
 }
 
 .dessert{
-	.ape{
-	animation-name:defil;
-	animation-duration:2000ms;
-	animation-delay:4100ms;
-	animation-fill-mode: forwards;
-	animation-timing-function: linear;
+	.container{
+	-webkit-animation-name:defil;
+	        animation-name:defil;
+	-webkit-animation-duration:2000ms;
+	        animation-duration:2000ms;
+	-webkit-animation-delay:4100ms;
+	        animation-delay:4100ms;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear;
 	opacity:0;
 	}
 
-	.ape-1{
-	animation-name:defil;
-	animation-duration:2000ms;
-	animation-delay:4100ms;
-	animation-fill-mode: forwards;
-	animation-timing-function: linear;
+	.container-1{
+	-webkit-animation-name:defil;
+	        animation-name:defil;
+	-webkit-animation-duration:2000ms;
+	        animation-duration:2000ms;
+	-webkit-animation-delay:4100ms;
+	        animation-delay:4100ms;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear;
 	opacity:0;
 	}
+
+	.container-10{
+	-webkit-animation-name:defil;
+	        animation-name:defil;
+	-webkit-animation-duration:2000ms;
+	        animation-duration:2000ms;
+	-webkit-animation-delay:4100ms;
+	        animation-delay:4100ms;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear;
+	opacity:0;
+	}
+
+	.container-2{
+	-webkit-animation-name:defil;
+	        animation-name:defil;
+	-webkit-animation-duration:2000ms;
+	        animation-duration:2000ms;
+	-webkit-animation-delay:4100ms;
+	        animation-delay:4100ms;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear;
+	opacity:0;
+	}
+
 }
 
 @keyframes defil{
 	0%{
 	opacity:0;
-	transform:translateY(-40px);
+	-webkit-transform:translateY(-40px);
+	        transform:translateY(-40px);
 	}
 
 	50%{
@@ -65,6 +162,7 @@
 	
 	100%{
 	opacity:1;
-	transform:translatY(0px);
+	-webkit-transform:translatY(0px);
+	        transform:translatY(0px);
 	}
 }
