@@ -84,14 +84,14 @@ section .fa-heart {
   margin-bottom: 15px;
 }
 .menu .container {
-  margin-left: 20px;
+  margin-left: 10px;
   background-color: white;
   border-radius: 15px;
   box-shadow: -1px 5px 5px 3px #e8e8e8;
-  width: 92%;
-  height: 70px;
+  width: 95%;
+  height: 80px;
   margin-bottom: 18px;
-  font-size: 15px;
+  font-size: 14px;
 }
 @media (min-width: 561px) and (max-width: 1024px) {
   .menu .container {
@@ -111,7 +111,7 @@ section .fa-heart {
   width: 70%;
   margin: 0px;
   margin-left: 10px;
-  padding-top: 5px;
+  padding-top: 15px;
 }
 @media (min-width: 561px) and (max-width: 1024px) {
   .menu .container h4 {
@@ -127,20 +127,20 @@ section .fa-heart {
     padding-top: 10px;
   }
 }
-.menu .container span {
-  font-size: 12px;
+.menu .container p {
+  font-size: 13px;
   position: relative;
   bottom: 10px;
   margin-left: 10px;
 }
 @media (min-width: 561px) and (max-width: 1024px) {
-  .menu .container span {
+  .menu .container p {
     margin-left: 10%;
-    font-size: 17px;
+    font-size: 16px;
   }
 }
 @media (min-width: 1025px) {
-  .menu .container span {
+  .menu .container p {
     margin-left: 10%;
     font-size: 18px;
   }
@@ -149,165 +149,38 @@ section .fa-heart {
   font-weight: bold;
   float: right;
   position: relative;
-  bottom: 10px;
-  padding-right: 13%;
-  padding-left: 5px;
+  bottom: 39px;
+  padding-right: 5%;
+  padding-left: 7px;
+}
+@media (min-width: 560px) and (max-width: 1024px) {
+  .menu .container .price {
+    position: relative;
+    bottom: 45px;
+    padding-bottom: 3px;
+  }
 }
 .menu .container .extent {
-  display: none;
-  float: right;
-  position: relative;
-  bottom: 10px;
-}
-.menu .container-1 {
-  margin-left: 20px;
-  background-color: white;
-  border-radius: 15px;
-  box-shadow: -1px 5px 5px 3px #e8e8e8;
-  width: 92%;
-  height: 75px;
-  margin-bottom: 18px;
-  font-size: 15px;
-}
-@media (min-width: 561px) and (max-width: 1024px) {
-  .menu .container-1 {
-    width: 70%;
-    height: 80px;
-    margin-left: 15%;
-  }
-}
-@media (min-width: 1025px) {
-  .menu .container-1 {
-    width: 70%;
-    height: 80px;
-    margin-left: 15%;
-  }
-}
-.menu .container-1 h4 {
-  width: 70%;
-  margin: 0px;
-  margin-left: 10px;
-  padding-top: 5px;
-}
-@media (min-width: 561px) and (max-width: 1024px) {
-  .menu .container-1 h4 {
-    margin-left: 10%;
-    font-size: 17px;
-  }
-}
-@media (min-width: 1025px) {
-  .menu .container-1 h4 {
-    margin-left: 10%;
-    font-size: 17px;
-  }
-}
-.menu .container-1 p {
-  font-size: 12px;
-  position: relative;
-  bottom: 20px;
-  margin-left: 10px;
-}
-@media (min-width: 561px) and (max-width: 1024px) {
-  .menu .container-1 p {
-    margin-left: 10%;
-    font-size: 17px;
-  }
-}
-@media (min-width: 1025px) {
-  .menu .container-1 p {
-    margin-left: 10%;
-    font-size: 17px;
-  }
-}
-.menu .container-1 .price {
   font-weight: bold;
-  float: right;
-  position: relative;
-  bottom: 60px;
-  padding-right: 13%;
-  padding-left: 5px;
-}
-.menu .container-1 .extent {
   display: none;
+  width: 5%;
   float: right;
   position: relative;
-  bottom: 64px;
+  top: 45px;
+  right: 18%;
+  padding-bottom: 10px;
+  padding-left: 6px;
 }
-.menu .container-2 {
-  margin-left: 20px;
-  background-color: white;
-  border-radius: 15px;
-  box-shadow: -1px 5px 5px 3px #e8e8e8;
-  width: 92%;
-  height: 70px;
-  margin-bottom: 18px;
-  font-size: 15px;
-}
-@media (min-width: 561px) and (max-width: 1024px) {
-  .menu .container-2 {
-    width: 70%;
-    height: 80px;
-    margin-left: 15%;
-  }
-}
-@media (min-width: 1025px) {
-  .menu .container-2 {
-    width: 70%;
-    height: 90px;
-    margin-left: 15%;
-  }
-}
-.menu .container-2 h4 {
-  width: 70%;
-  margin: 0px;
-  margin-left: 10px;
-  padding-top: 5px;
-}
-@media (min-width: 561px) and (max-width: 1024px) {
-  .menu .container-2 h4 {
-    margin-left: 10%;
-    font-size: 17px;
-    padding-top: 10px;
-  }
-}
-@media (min-width: 1025px) {
-  .menu .container-2 h4 {
-    margin-left: 10%;
-    font-size: 18px;
-    padding-top: 10px;
-  }
-}
-.menu .container-2 span {
-  font-size: 12px;
-  position: relative;
-  bottom: 10px;
-  margin-left: 10px;
-}
-@media (min-width: 561px) and (max-width: 1024px) {
-  .menu .container-2 span {
-    margin-left: 10%;
-    font-size: 17px;
-  }
-}
-@media (min-width: 1025px) {
-  .menu .container-2 span {
-    margin-left: 10%;
-    font-size: 18px;
-  }
-}
-.menu .container-2 .price {
+.menu .container .extent-1 {
   font-weight: bold;
-  float: right;
-  position: relative;
-  bottom: 10px;
-  padding-right: 13%;
-  padding-left: 5px;
-}
-.menu .container-2 .extent {
   display: none;
+  width: 5%;
   float: right;
   position: relative;
-  bottom: 10px;
+  top: 45px;
+  right: 3%;
+  padding-bottom: 10px;
+  padding-left: 2px;
 }
 
 .commander {
@@ -560,6 +433,19 @@ section .fa-heart:hover::before {
   animation-timing-function: linear;
   opacity: 0;
 }
+.dessert .container-10 {
+  -webkit-animation-name: defil;
+  animation-name: defil;
+  -webkit-animation-duration: 2000ms;
+  animation-duration: 2000ms;
+  -webkit-animation-delay: 4100ms;
+  animation-delay: 4100ms;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  opacity: 0;
+}
 .dessert .container-2 {
   -webkit-animation-name: defil;
   animation-name: defil;
@@ -599,20 +485,10 @@ section .fa-heart:hover::before {
 .container .progress .fas {
   display: none;
 }
-.container .progress-1 {
-  display: none;
-}
-.container .progress-1 .marge-progress {
-  transform: scaleX(0);
-  transition: transform 400ms;
-}
-.container .progress-1 .fas {
-  display: none;
-}
-.container .progress-1 .extent {
-  display: none;
-}
 .container:hover .price {
+  position: relative;
+  right: 3%;
+  z-index: 1001;
   background-color: white;
   -webkit-animation-name: price;
   animation-name: price;
@@ -628,11 +504,118 @@ section .fa-heart:hover::before {
 @media (min-width: 400px) and (max-width: 560px) {
   .container:hover .price {
     position: relative;
-    right: 10%;
+    right: 7%;
+  }
+}
+@media (min-width: 561px) and (max-width: 1024px) {
+  .container:hover .price {
+    position: relative;
+    right: 5%;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1629px) {
+  .container:hover .price {
+    position: relative;
+    right: 15%;
+  }
+}
+@media (min-width: 1630px) {
+  .container:hover .price {
+    position: relative;
+    right: 17%;
   }
 }
 .container:hover .extent {
   display: flex;
+  z-index: 1000;
+  opacity: 0;
+  background-color: white;
+  -webkit-animation-name: price;
+  animation-name: extent;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-delay: 60ms;
+  animation-delay: 60ms;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+@media (min-width: 320px) and (max-width: 370px) {
+  .container:hover .extent {
+    display: flex;
+    position: relative;
+    right: 17%;
+  }
+}
+@media (min-width: 371px) and (max-width: 399px) {
+  .container:hover .extent {
+    display: flex;
+    position: relative;
+    right: 16%;
+  }
+}
+@media (min-width: 400px) and (max-width: 415px) {
+  .container:hover .extent {
+    display: flex;
+    position: relative;
+    right: 19%;
+  }
+}
+@media (min-width: 416px) and (max-width: 560px) {
+  .container:hover .extent {
+    display: none;
+  }
+}
+@media (min-width: 561px) and (max-width: 635px) {
+  .container:hover .extent {
+    position: relative;
+    right: 9%;
+    top: 50px;
+    padding-bottom: 2px;
+  }
+}
+@media (min-width: 636px) and (max-width: 643px) {
+  .container:hover .extent {
+    position: relative;
+    right: 8%;
+    top: 50px;
+    padding-bottom: 2px;
+  }
+}
+@media (min-width: 644px) and (max-width: 648px) {
+  .container:hover .extent {
+    position: relative;
+    right: 9%;
+    top: 50px;
+    padding-bottom: 2px;
+  }
+}
+@media (min-width: 561px) and (max-width: 665px) {
+  .container:hover .extent {
+    position: relative;
+    right: 16%;
+    top: 50px;
+    padding-bottom: 2px;
+  }
+}
+@media (min-width: 666px) and (max-width: 703px) {
+  .container:hover .extent {
+    position: relative;
+    right: 15%;
+    top: 50px;
+    padding-bottom: 2px;
+  }
+}
+@media (min-width: 704px) {
+  .container:hover .extent {
+    display: none;
+  }
+}
+.container:hover .extent-1 {
+  display: flex;
+  z-index: 1000;
+  opacity: 0;
   background-color: white;
   -webkit-animation-name: price;
   animation-name: extent;
@@ -646,7 +629,20 @@ section .fa-heart:hover::before {
   animation-timing-function: ease-in-out;
 }
 @media (min-width: 396px) and (max-width: 560px) {
-  .container:hover .extent {
+  .container:hover .extent-1 {
+    display: none;
+  }
+}
+@media (min-width: 561px) and (max-width: 729px) {
+  .container:hover .extent-1 {
+    position: relative;
+    right: 5%;
+    top: 50px;
+    padding-bottom: 2px;
+  }
+}
+@media (min-width: 730px) {
+  .container:hover .extent-1 {
     display: none;
   }
 }
@@ -654,21 +650,126 @@ section .fa-heart:hover::before {
   display: flex;
 }
 .container:hover .progress .marge-progress {
-  width: 25%;
-  height: 71px;
+  z-index: 1002;
+  width: 30%;
+  height: 81px;
   position: relative;
-  left: 75%;
-  bottom: 57px;
+  left: 88%;
+  bottom: 87px;
   border-radius: 0px 15px 15px 0px;
   transform-origin: right;
   background-color: #99E2D0;
   transform: scaleX(1);
+}
+@media (min-width: 330px) and (max-width: 360px) {
+  .container:hover .progress .marge-progress {
+    width: 30%;
+    height: 80px;
+    position: relative;
+    bottom: 87px;
+  }
+}
+@media (min-width: 361px) and (max-width: 400px) {
+  .container:hover .progress .marge-progress {
+    width: 28.5%;
+    height: 80px;
+    position: relative;
+    bottom: 87px;
+  }
+}
+@media (min-width: 401px) and (max-width: 440px) {
+  .container:hover .progress .marge-progress {
+    width: 27.5%;
+    height: 80px;
+    position: relative;
+    bottom: 87px;
+  }
+}
+@media (min-width: 441px) and (max-width: 500px) {
+  .container:hover .progress .marge-progress {
+    width: 26.5%;
+    height: 80px;
+    position: relative;
+    bottom: 87px;
+  }
+}
+@media (min-width: 501px) and (max-width: 560px) {
+  .container:hover .progress .marge-progress {
+    width: 25%;
+    height: 80px;
+    position: relative;
+    bottom: 87px;
+  }
+}
+@media (min-width: 561px) and (max-width: 660px) {
+  .container:hover .progress .marge-progress {
+    width: 26%;
+    height: 81px;
+    position: relative;
+    bottom: 96px;
+    left: 89%;
+  }
+}
+@media (min-width: 661px) and (max-width: 760px) {
+  .container:hover .progress .marge-progress {
+    width: 24.5%;
+    height: 81px;
+    position: relative;
+    bottom: 96px;
+    left: 89%;
+  }
+}
+@media (min-width: 761px) and (max-width: 860px) {
+  .container:hover .progress .marge-progress {
+    width: 23%;
+    height: 81px;
+    position: relative;
+    bottom: 96px;
+    left: 90%;
+  }
+}
+@media (min-width: 861px) and (max-width: 960px) {
+  .container:hover .progress .marge-progress {
+    width: 22%;
+    height: 81px;
+    position: relative;
+    bottom: 96px;
+    left: 90%;
+  }
+}
+@media (min-width: 961px) and (max-width: 1024px) {
+  .container:hover .progress .marge-progress {
+    width: 21%;
+    height: 81px;
+    position: relative;
+    bottom: 96px;
+    left: 91%;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1224px) {
+  .container:hover .progress .marge-progress {
+    width: 20%;
+    height: 90px;
+    position: relative;
+    bottom: 102px;
+    left: 91%;
+  }
+}
+@media (min-width: 1225px) {
+  .container:hover .progress .marge-progress {
+    width: 19%;
+    height: 90px;
+    position: relative;
+    bottom: 102px;
+    left: 91%;
+  }
 }
 .container:hover .progress .fas {
+  z-index: 1003;
   display: flex;
   position: relative;
-  bottom: 35px;
-  left: 58%;
+  bottom: 60px;
+  left: 68%;
   height: 12px;
   font-size: 12px;
   color: #99E2D0;
@@ -681,36 +782,40 @@ section .fa-heart:hover::before {
   animation-fill-mode: forwards;
   opacity: 0;
 }
-.container:hover .progress-1 {
-  display: flex;
+@media (min-width: 400px) and (max-width: 560px) {
+  .container:hover .progress .fas {
+    position: relative;
+    bottom: 60px;
+    left: 70%;
+  }
 }
-.container:hover .progress-1 .marge-progress {
-  width: 25%;
-  height: 76px;
-  position: relative;
-  left: 90%;
-  bottom: 98px;
-  border-radius: 0px 15px 15px 0px;
-  transform-origin: right;
-  background-color: #99E2D0;
-  transform: scaleX(1);
+@media (min-width: 561px) and (max-width: 700px) {
+  .container:hover .progress .fas {
+    position: relative;
+    bottom: 70px;
+    left: 73%;
+  }
 }
-.container:hover .progress-1 .fas {
-  display: flex;
-  position: relative;
-  bottom: 70px;
-  left: 70%;
-  height: 12px;
-  font-size: 12px;
-  color: #99E2D0;
-  background-color: white;
-  padding: 5px;
-  border-radius: 50%;
-  animation-name: icone;
-  animation-duration: 500ms;
-  animation-delay: 100ms;
-  animation-fill-mode: forwards;
-  opacity: 0;
+@media (min-width: 701px) and (max-width: 960px) {
+  .container:hover .progress .fas {
+    position: relative;
+    bottom: 70px;
+    left: 74%;
+  }
+}
+@media (min-width: 961px) and (max-width: 1024px) {
+  .container:hover .progress .fas {
+    position: relative;
+    bottom: 70px;
+    left: 77%;
+  }
+}
+@media (min-width: 1025px) {
+  .container:hover .progress .fas {
+    position: relative;
+    bottom: 70px;
+    left: 79%;
+  }
 }
 
 @keyframes icone {
@@ -752,408 +857,11 @@ section .fa-heart:hover::before {
     transform: translate(-60px, 0px);
   }
 }
-/*container plus haut*/
-.container-1 .progress .marge-progress {
-  transform: scaleX(0);
-  transition: transform 400ms;
-}
-.container-1 .progress .fas {
-  display: none;
-}
-.container-1 .progress-1 .marge-progress {
-  transform: scaleX(0);
-  transition: transform 400ms;
-}
-.container-1 .progress-1 .fas {
-  display: none;
-}
-.container-1 .progress-2 .marge-progress {
-  transform: scaleX(0);
-  transition: transform 400ms;
-}
-.container-1 .progress-2 .fas {
-  display: none;
-}
-.container-1:hover {
-  /*quand on a un container plus haut la marge n'est pas adapté, alors j'ai fait une marge adapté avec le titre*/
-  /*quand on a un container plus haut la marge n'est pas adapté, alors j'ai fait une marge adapté avec le paragraphe*/
-}
-.container-1:hover .price {
-  background-color: white;
-  -webkit-animation-name: price;
-  animation-name: price;
-  -webkit-animation-duration: 200ms;
-  animation-duration: 200ms;
-  -webkit-animation-delay: 30ms;
-  animation-delay: 30ms;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  padding-right: 10%;
-}
-@media (min-width: 400px) and (max-width: 560px) {
-  .container-1:hover .price {
-    position: relative;
-    right: 10%;
-  }
-}
-.container-1:hover .extent {
-  display: flex;
-  background-color: white;
-  -webkit-animation-name: price;
-  animation-name: extent;
-  -webkit-animation-duration: 300ms;
-  animation-duration: 300ms;
-  -webkit-animation-delay: 60ms;
-  animation-delay: 60ms;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-}
-.container-1:hover .progress {
-  display: flex;
-}
-.container-1:hover .progress .marge-progress {
-  width: 32%;
-  height: 76px;
-  position: relative;
-  left: 94%;
-  bottom: 90px;
-  border-radius: 0px 15px 15px 0px;
-  transform-origin: right;
-  background-color: #99E2D0;
-  transform: scaleX(1);
-}
-@media (min-width: 331px) and (max-width: 357px) {
-  .container-1:hover .progress .marge-progress {
-    width: 33%;
-    position: relative;
-    left: 92%;
-  }
-}
-@media (min-width: 358px) and (max-width: 378px) {
-  .container-1:hover .progress .marge-progress {
-    position: relative;
-    left: 93%;
-  }
-}
-@media (min-width: 379px) and (max-width: 400px) {
-  .container-1:hover .progress .marge-progress {
-    width: 32%;
-    position: relative;
-    left: 91.5%;
-  }
-}
-@media (min-width: 401px) and (max-width: 420px) {
-  .container-1:hover .progress .marge-progress {
-    width: 31%;
-    position: relative;
-    left: 91.5%;
-  }
-}
-@media (min-width: 421px) and (max-width: 431px) {
-  .container-1:hover .progress .marge-progress {
-    width: 31%;
-    position: relative;
-    left: 92%;
-  }
-}
-@media (min-width: 432px) and (max-width: 444px) {
-  .container-1:hover .progress .marge-progress {
-    width: 30%;
-    position: relative;
-    left: 91.5%;
-  }
-}
-@media (min-width: 445px) and (max-width: 480px) {
-  .container-1:hover .progress .marge-progress {
-    width: 30%;
-    position: relative;
-    left: 91%;
-  }
-}
-@media (min-width: 481px) and (max-width: 510px) {
-  .container-1:hover .progress .marge-progress {
-    width: 30%;
-    position: relative;
-    left: 90.5%;
-  }
-}
-@media (min-width: 511px) and (max-width: 560px) {
-  .container-1:hover .progress .marge-progress {
-    width: 30%;
-    position: relative;
-    left: 90.5%;
-  }
-}
-.container-1:hover .progress .fas {
-  display: flex;
-  position: relative;
-  bottom: 65px;
-  left: 73%;
-  height: 12px;
-  font-size: 12px;
-  color: #99E2D0;
-  background-color: white;
-  padding: 5px;
-  border-radius: 50%;
-  animation-name: icone;
-  animation-duration: 500ms;
-  animation-delay: 100ms;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-@media (min-width: 330px) and (max-width: 378px) {
-  .container-1:hover .progress .fas {
-    position: relative;
-    left: 71%;
-  }
-}
-@media (min-width: 379px) and (max-width: 400px) {
-  .container-1:hover .progress .fas {
-    position: relative;
-    left: 70%;
-  }
-}
-@media (min-width: 401px) and (max-width: 420px) {
-  .container-1:hover .progress .fas {
-    position: relative;
-    left: 70%;
-  }
-}
-@media (min-width: 421px) and (max-width: 431px) {
-  .container-1:hover .progress .fas {
-    position: relative;
-    left: 72%;
-  }
-}
-@media (min-width: 432px) and (max-width: 560px) {
-  .container-1:hover .progress .fas {
-    position: relative;
-    left: 70%;
-  }
-}
-.container-1:hover .progress-1 {
-  display: flex;
-}
-.container-1:hover .progress-1 .marge-progress {
-  width: 32%;
-  height: 76px;
-  position: relative;
-  left: 94%;
-  bottom: 94px;
-  border-radius: 0px 15px 15px 0px;
-  transform-origin: right;
-  background-color: #99E2D0;
-  transform: scaleX(1);
-}
-@media (min-width: 344px) and (max-width: 360px) {
-  .container-1:hover .progress-1 .marge-progress {
-    position: relative;
-    left: 92.5%;
-    bottom: 76px;
-  }
-}
-@media (min-width: 361px) and (max-width: 380px) {
-  .container-1:hover .progress-1 .marge-progress {
-    position: relative;
-    left: 92%;
-    bottom: 76px;
-  }
-}
-@media (min-width: 381px) and (max-width: 408px) {
-  .container-1:hover .progress-1 .marge-progress {
-    position: relative;
-    left: 91.5%;
-    bottom: 76px;
-  }
-}
-@media (min-width: 409px) and (max-width: 445px) {
-  .container-1:hover .progress-1 .marge-progress {
-    position: relative;
-    left: 90%;
-    bottom: 76px;
-  }
-}
-@media (min-width: 446px) and (max-width: 485px) {
-  .container-1:hover .progress-1 .marge-progress {
-    position: relative;
-    left: 89%;
-    bottom: 76px;
-  }
-}
-@media (min-width: 486px) and (max-width: 560px) {
-  .container-1:hover .progress-1 .marge-progress {
-    position: relative;
-    left: 88.5%;
-    bottom: 76px;
-  }
-}
-.container-1:hover .progress-1 .fas {
-  display: flex;
-  position: relative;
-  bottom: 70px;
-  left: 72%;
-  height: 12px;
-  font-size: 12px;
-  color: #99E2D0;
-  background-color: white;
-  padding: 5px;
-  border-radius: 50%;
-  animation-name: icone;
-  animation-duration: 500ms;
-  animation-delay: 100ms;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-@media (min-width: 344px) and (max-width: 560px) {
-  .container-1:hover .progress-1 .fas {
-    position: relative;
-    bottom: 50px;
-  }
-}
-@media (min-width: 360px) and (max-width: 400px) {
-  .container-1:hover .progress-1 .fas {
-    position: relative;
-    left: 70%;
-  }
-}
-@media (min-width: 401px) and (max-width: 439px) {
-  .container-1:hover .progress-1 .fas {
-    position: relative;
-    left: 69%;
-  }
-}
-@media (min-width: 440px) and (max-width: 480px) {
-  .container-1:hover .progress-1 .fas {
-    position: relative;
-    left: 68%;
-  }
-}
-@media (min-width: 481px) and (max-width: 560px) {
-  .container-1:hover .progress-1 .fas {
-    position: relative;
-    left: 67%;
-  }
-}
-.container-1:hover .progress-2 {
-  display: flex;
-}
-.container-1:hover .progress-2 .marge-progress {
-  width: 34%;
-  height: 76px;
-  position: relative;
-  left: 99%;
-  bottom: 90px;
-  border-radius: 0px 15px 15px 0px;
-  transform-origin: right;
-  background-color: #99E2D0;
-  transform: scaleX(1);
-}
-.container-1:hover .progress-2 .fas {
-  display: flex;
-  position: relative;
-  bottom: 65px;
-  left: 77%;
-  height: 12px;
-  font-size: 12px;
-  color: #99E2D0;
-  background-color: white;
-  padding: 5px;
-  border-radius: 50%;
-  animation-name: icone;
-  animation-duration: 500ms;
-  animation-delay: 100ms;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-/* problème sur un plat, la marge etait trop a droite, aucune raison trouvée*/
-.container-2 .progress .marge-progress {
-  transform: scaleX(0);
-  transition: transform 400ms;
-}
-.container-2 .progress .fas {
-  display: none;
-}
-.container-2:hover .price {
-  background-color: white;
-  -webkit-animation-name: price;
-  animation-name: price;
-  -webkit-animation-duration: 200ms;
-  animation-duration: 200ms;
-  -webkit-animation-delay: 30ms;
-  animation-delay: 30ms;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  padding-right: 10%;
-}
-@media (min-width: 400px) and (max-width: 560px) {
-  .container-2:hover .price {
-    position: relative;
-    right: 10%;
-  }
-}
-.container-2:hover .extent {
-  display: flex;
-  background-color: white;
-  -webkit-animation-name: price;
-  animation-name: extent;
-  -webkit-animation-duration: 300ms;
-  animation-duration: 300ms;
-  -webkit-animation-delay: 60ms;
-  animation-delay: 60ms;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-}
-@media (min-width: 385px) and (max-width: 560px) {
-  .container-2:hover .extent {
-    display: none;
-  }
-}
-.container-2:hover .progress {
-  display: flex;
-}
-.container-2:hover .progress .marge-progress {
-  width: 25%;
-  height: 70px;
-  position: relative;
-  left: 75%;
-  bottom: 56px;
-  border-radius: 0px 15px 15px 0px;
-  transform-origin: right;
-  background-color: #99E2D0;
-  transform: scaleX(1);
-}
-.container-2:hover .progress .fas {
-  display: flex;
-  position: relative;
-  bottom: 32px;
-  left: 58%;
-  height: 12px;
-  font-size: 12px;
-  color: #99E2D0;
-  background-color: white;
-  padding: 5px;
-  border-radius: 50%;
-  animation-name: icone;
-  animation-duration: 500ms;
-  animation-delay: 100ms;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-
 .loader {
   position: absolute;
   margin: 0;
-  padding-left: 15%;
-  width: 100%;
+  padding-left: 50%;
+  width: 50%;
   height: 120%;
   background-color: white;
   opacity: 1;
@@ -1166,12 +874,12 @@ section .fa-heart:hover::before {
 }
 @media (min-width: 561px) and (max-width: 1024px) {
   .loader {
-    width: 100%;
+    width: 50%;
   }
 }
 @media (min-width: 1025px) {
   .loader {
-    width: 100%;
+    width: 50%;
   }
 }
 
@@ -1203,7 +911,7 @@ section .fa-heart:hover::before {
 }
 .custom-loader {
   position: absolute;
-  left: 25%;
+  left: 35%;
   top: 30%;
   cursor: progress;
   background: -o-radial-gradient(closest-side, #99E2D0, #9356DC, #fff);
