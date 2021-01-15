@@ -12,34 +12,6 @@
 	        animation-timing-function: linear;
 	opacity:0;
 	}
-
-	.container-1{
-	-webkit-animation-name:defil;
-	        animation-name:defil;
-	-webkit-animation-duration:2000ms;
-	        animation-duration:2000ms;
-	-webkit-animation-delay:100ms;
-	        animation-delay:100ms;
-	-webkit-animation-fill-mode: forwards;
-	        animation-fill-mode: forwards;
-	-webkit-animation-timing-function: linear;
-	        animation-timing-function: linear;
-	opacity:0;
-	}
-
-	.container-2{
-	-webkit-animation-name:defil;
-	        animation-name:defil;
-	-webkit-animation-duration:2000ms;
-	        animation-duration:2000ms;
-	-webkit-animation-delay:100ms;
-	        animation-delay:100ms;
-	-webkit-animation-fill-mode: forwards;
-	        animation-fill-mode: forwards;
-	-webkit-animation-timing-function: linear;
-	        animation-timing-function: linear;
-	opacity:0;
-	}
 }
 
 .plat{
@@ -57,79 +29,10 @@
 	opacity:0;
 	}
 
-	.container-1{
-	-webkit-animation-name:defil;
-	        animation-name:defil;
-	-webkit-animation-duration:2000ms;
-	        animation-duration:2000ms;
-	-webkit-animation-delay:2100ms;
-	        animation-delay:2100ms;
-	-webkit-animation-fill-mode: forwards;
-	        animation-fill-mode: forwards;
-	-webkit-animation-timing-function: linear;
-	        animation-timing-function: linear;
-	opacity:0;
-	}
-
-	.container-2{
-	-webkit-animation-name:defil;
-	        animation-name:defil;
-	-webkit-animation-duration:2000ms;
-	        animation-duration:2000ms;
-	-webkit-animation-delay:2100ms;
-	        animation-delay:2100ms;
-	-webkit-animation-fill-mode: forwards;
-	        animation-fill-mode: forwards;
-	-webkit-animation-timing-function: linear;
-	        animation-timing-function: linear;
-	opacity:0;
-	}
 }
 
 .dessert{
 	.container{
-	-webkit-animation-name:defil;
-	        animation-name:defil;
-	-webkit-animation-duration:2000ms;
-	        animation-duration:2000ms;
-	-webkit-animation-delay:4100ms;
-	        animation-delay:4100ms;
-	-webkit-animation-fill-mode: forwards;
-	        animation-fill-mode: forwards;
-	-webkit-animation-timing-function: linear;
-	        animation-timing-function: linear;
-	opacity:0;
-	}
-
-	.container-1{
-	-webkit-animation-name:defil;
-	        animation-name:defil;
-	-webkit-animation-duration:2000ms;
-	        animation-duration:2000ms;
-	-webkit-animation-delay:4100ms;
-	        animation-delay:4100ms;
-	-webkit-animation-fill-mode: forwards;
-	        animation-fill-mode: forwards;
-	-webkit-animation-timing-function: linear;
-	        animation-timing-function: linear;
-	opacity:0;
-	}
-
-	.container-10{
-	-webkit-animation-name:defil;
-	        animation-name:defil;
-	-webkit-animation-duration:2000ms;
-	        animation-duration:2000ms;
-	-webkit-animation-delay:4100ms;
-	        animation-delay:4100ms;
-	-webkit-animation-fill-mode: forwards;
-	        animation-fill-mode: forwards;
-	-webkit-animation-timing-function: linear;
-	        animation-timing-function: linear;
-	opacity:0;
-	}
-
-	.container-2{
 	-webkit-animation-name:defil;
 	        animation-name:defil;
 	-webkit-animation-duration:2000ms;
@@ -162,7 +65,6 @@
 	
 	100%{
 	opacity:1;
-	-webkit-transform:translatY(0px);
-	        transform:translatY(0px);
+	
 	}
 }
