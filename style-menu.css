@@ -305,14 +305,14 @@ header img {
 
 @font-face {
   font-family: Shrikhand;
-  src: local "Shrikhand-Regular.ttf" format("Truetype");
-  src: local "Shrikhand-Regular.otf" format("OpenType");
+  src: url "Shrikhand-Regular.ttf" format("Truetype");
+  src: url "Shrikhand-Regular.otf" format("OpenType");
   font-weight: lighter;
   font-style: normal;
 }
 @font-face {
   font-family: Roboto;
-  src: local "Roboto-Black.ttf" format("Truetype");
+  src: url "Roboto-Black.ttf" format("Truetype");
   font-weight: normal;
   font-style: normal;
 }
