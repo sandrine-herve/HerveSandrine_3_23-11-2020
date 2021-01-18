@@ -22,7 +22,7 @@ i{
      background: -webkit-gradient(linear, left bottom, left top, from($color-scd), to($color-prim));
     background: -o-linear-gradient(bottom, $color-scd, $color-prim);
     background: linear-gradient(to top, $color-scd, $color-prim);
-    background-clip: text;
+    background-clip: border-box;
     -webkit-background-clip: text;
     color: transparent;
     cursor:pointer;
