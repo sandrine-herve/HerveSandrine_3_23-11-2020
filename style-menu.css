@@ -350,7 +350,7 @@ section .fa-heart:hover::before {
   background: -o-linear-gradient(bottom, #FF79DA, #9356DC);
   background: linear-gradient(to top, #FF79DA, #9356DC);
   background-clip: border-box;
-  -webkit-background-clip: text;
+  -webkit-background-clip: border-box;
   color: transparent;
   cursor: pointer;
 }
