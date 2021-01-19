@@ -485,7 +485,7 @@ section .fa-heart:hover::before {
   position: absolute;
   left: 35%;
   top: 30%;
-  cursor: progress;
+  cursor: wait;
   background: -o-radial-gradient(closest-side, #99E2D0, #9356DC, #fff);
   background: radial-gradient(closest-side, #99E2D0, #9356DC, #fff);
   border: 10px solid #9356DC;
