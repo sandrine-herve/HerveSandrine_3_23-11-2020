@@ -317,14 +317,14 @@ header img {
 
 @font-face {
   font-family: Shrikhand;
-  src: url("POLICE/Shrikhand-Regular.ttf") format("Truetype");
-  src: url("POLICE/Shrikhand-Regular.otf") format("OpenType");
+  src: url("police/Shrikhand-Regular.ttf") format("Truetype");
+  src: url("police/Shrikhand-Regular.otf") format("OpenType");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: Roboto;
-  src: url("POLICE/Roboto-Regular.ttf") format("Truetype");
+  src: url("police/Roboto-Regular.ttf") format("Truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -797,7 +797,7 @@ section .fa-heart:hover::before {
   margin: 0;
   padding-left: 50%;
   width: 50%;
-  height: 120%;
+  height: 100vh;
   background-color: white;
   opacity: 1;
   -webkit-animation-name: loader2;
