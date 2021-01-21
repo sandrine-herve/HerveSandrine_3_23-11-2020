@@ -118,21 +118,21 @@ section .fa-heart {
     margin-left: 15%;
   }
 }
-.menu .container h4 {
+.menu .container h3 {
   width: 70%;
   margin: 0px;
   margin-left: 10px;
   padding-top: 15px;
 }
 @media (min-width: 561px) and (max-width: 1024px) {
-  .menu .container h4 {
+  .menu .container h3 {
     margin-left: 10%;
     font-size: 17px;
     padding-top: 10px;
   }
 }
 @media (min-width: 1025px) {
-  .menu .container h4 {
+  .menu .container h3 {
     margin-left: 10%;
     font-size: 18px;
     padding-top: 10px;
@@ -278,6 +278,23 @@ footer li {
 }
 @media (min-width: 1025px) {
   footer li {
+    padding-bottom: 20px;
+  }
+}
+footer li address {
+  font-family: Roboto;
+  text-decoration: none;
+  font-style: normal;
+  color: white;
+  margin-bottom: 5px;
+}
+@media (min-width: 561px) and (max-width: 1024px) {
+  footer li address {
+    padding-bottom: 10px;
+  }
+}
+@media (min-width: 1025px) {
+  footer li address {
     padding-bottom: 20px;
   }
 }

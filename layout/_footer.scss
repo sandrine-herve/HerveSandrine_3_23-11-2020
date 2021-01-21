@@ -70,7 +70,25 @@ width:80%;
   @media (min-width:1025px){
   padding-bottom:20px;
   }
+
+    & address{
+    font-family:Roboto;
+    text-decoration:none;
+    font-style:normal;
+    color:white;
+    margin-bottom:5px;
+
+  @media (min-width:561px)and(max-width:1024px){
+  padding-bottom:10px;
   }
+
+  @media (min-width:1025px){
+  padding-bottom:20px;
+  }
+  }
+  }
+
+
 
 & a{
   color:white;
