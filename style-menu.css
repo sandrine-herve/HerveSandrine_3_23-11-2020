@@ -349,7 +349,6 @@ section .fa-heart:hover::before {
   background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
   background: -o-linear-gradient(bottom, #FF79DA, #9356DC);
   background: linear-gradient(to top, #FF79DA, #9356DC);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   cursor: pointer;
@@ -797,7 +796,7 @@ section .fa-heart:hover::before {
   margin: 0;
   padding-left: 50%;
   width: 50%;
-  height: 300%;
+  height: 100vh;
   background-color: white;
   opacity: 1;
   -webkit-animation-name: loader2;
@@ -847,8 +846,8 @@ section .fa-heart:hover::before {
 .custom-loader {
   position: absolute;
   left: 35%;
-  top: 10%;
-  cursor: progress;
+  top: 30%;
+  cursor: wait;
   background: -o-radial-gradient(closest-side, #99E2D0, #9356DC, #fff);
   background: radial-gradient(closest-side, #99E2D0, #9356DC, #fff);
   border: 10px solid #9356DC;
